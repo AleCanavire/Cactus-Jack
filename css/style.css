@@ -63,8 +63,7 @@ nav{
 header{
 	line-height: 0;
 }
-	header img,
-	header video{
+	header img{
 		width: 100%;
 	}
 
@@ -75,7 +74,6 @@ main{
 footer{
 	background: #363433;
 	width: 100%;
-	position: absolute;
 	bottom: 0;
 	display: flex;
 	flex-wrap: wrap;
@@ -126,48 +124,6 @@ footer{
 
 #footerShop{
 	grid-area: footerShop;
-}
-
-/*======== GRID Music ========*/
-#navMusic{
-	grid-area: navMusic;
-}
-
-#headerMusic{
-	grid-area: headerMusic;
-}
-
-#asideMusic{
-	grid-area: asideMusic;
-}
-
-#mainMusic{
-	grid-area: mainMusic;
-}
-
-#footerMusic{
-	grid-area: footerMusic;
-}
-
-/*======== GRID News ========*/
-#navNews{
-	grid-area: navNews;
-}
-
-#headerNews{
-	grid-area: headerNews;
-}
-
-#asideNews{
-	grid-area: asideNews;
-}
-
-#mainNews{
-	grid-area: mainNews;
-}
-
-#footerNews{
-	grid-area: footerNews;
 }
 
 /*======== GRID Contact ========*/
@@ -352,7 +308,6 @@ footer{
 
 	/* tshirts */
 	.containerTshirt{
-		padding-bottom: 220px;
 		display: flex;
 		flex-wrap: wrap;
 		align-content: center;
@@ -379,45 +334,8 @@ footer{
 /*========= ends shop =========*/
 
 /*=========== music ===========*/
-/*--- grid music ---*/
-.contenedorMusic{
-	display: grid;
-	grid-template-columns: 10% 90%;
-	grid-template-rows: auto;
-	grid-template-areas:
-	"navMusic navMusic"
-	"headerMusic headerMusic"
-	"asideMusic mainMusic"
-	"footerMusic footerMusic";
-}
-/*- ends grid music -*/
-.asideBuy{
-	padding-top: 130px;
-	width: 100%;
-	}
-	.asideBuy article{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		margin-bottom: 25px;
-	}
-		.asideBuy article img{
-			border-radius: 10px;
-			width: 90%;
-			padding-bottom: 5px;
-		}
-		.asideBuy article button{
-			background: #363433;
-			color: #e2dad8;
-			border: none;
-			border-radius: 3px;
-			padding: 2px 6px;
-			cursor: pointer;
-		}
-
 .container{
 	width: 100%;
-	padding-bottom: 300px;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
@@ -454,60 +372,12 @@ footer{
 /*========= ends music =========*/
 
 /*=========== news ===========*/
-/*--- grid news ---*/
-.contenedorNews{
-	display: grid;
-	grid-template-columns: 88% 12%;
-	grid-template-rows: auto;
-	grid-template-areas:
-	"navNews navNews"
-	"headerNews headerNews"
-	"mainNews asideNews"
-	"footerNews footerNews";
-}
-/*- ends grid news -*/
-
 .containerNews{
-	padding-bottom: 350px;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
 	justify-content: space-evenly;
 }
-
-.asideShows{
-	margin-top: 130px;
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-	.asideShows h2{
-		width: 100%;
-		text-align: center;
-		font-size: 2rem;
-		margin-bottom: 15px;
-	}
-	.asideShows article{
-		width: 90%;
-		text-align: center;
-		margin-bottom: 30px;
-	}
-	.asideShows article img{
-		display: block;
-		width: 100%;
-		border-top-left-radius: 5px;
-		border-top-right-radius: 5px;
-	}
-	.asideShows h3{
-		background: #363433;
-		color: #e2dad8;
-		padding: 5px 0;
-		font-size: 1.4rem;
-		font-weight: 500;
-		border-bottom-left-radius: 5px;
-		border-bottom-right-radius: 5px;
-	}
 
 article.newsCard div{
 	width: 50%;
@@ -1016,9 +886,6 @@ article.newsCard div{
 }
 
 @media (max-width: 600px){
-	.containerTshirt{
-		padding-bottom: 280px;
-	}
 	.asideForm{
 		justify-content: space-between;
 	}
@@ -1054,65 +921,13 @@ article.newsCard div{
 	}
 }
 
-@media (max-width: 1024px){
-	.contenedorMusic{
-		grid-template-columns: 1fr;
-		grid-template-rows: auto;
-		grid-template-areas:
-		"navMusic"
-		"headerMusic"
-		"mainMusic"
-		"asideMusic"
-		"footerMusic";
-	}
-
-	.container{
-		padding-bottom: 0;
-	}
-
-	.asideBuy{
-		padding-top: 0;
-		display: flex;
-		justify-content: space-evenly;
-		padding-bottom: 250px;
-	}
-	.asideBuy article{
-		width: 12%;
-		margin-bottom: 0;
-	}
-		.asideBuy article img{
-			border-radius: 10px;
-			width: 100%;
-			padding-bottom: 5px;
-		}
-		.asideBuy article button{
-			background: #363433;
-			color: #e2dad8;
-			border: none;
-			border-radius: 3px;
-			padding: 2px 6px;
-			cursor: pointer;
-		}
-}
-
 @media(max-width: 768px){
-	.asideBuy article{
-		width: 15%;
-		margin-bottom: 0;
-	}
 	.album{
 		width: 85%;
 	}
 }
 
 @media(max-width: 600px){
-	.asideBuy{
-		flex-wrap: wrap;
-	}
-		.asideBuy article{
-			width: 30%;
-			margin-bottom: 20px;
-		}
 	.table{
 		font-size: 1.3rem;
 	}
@@ -1136,59 +951,6 @@ article.newsCard div{
 
 /*====== media queries news ======*/
 @media (max-width: 1200px){
-	#asideNews{
-		display: flex;
-		justify-content: center;
-	}
-	.contenedorNews{
-		grid-template-columns: 1fr;
-		grid-template-rows: auto;
-		grid-template-areas:
-		"navNews"
-		"headerNews"
-		"mainNews"
-		"asideNews"
-		"footerNews";
-	}
-
-	.containerNews{
-		padding-bottom: 0;
-	}
-
-	.asideShows{
-		margin-top: 0;
-		padding-bottom: 300px;
-		width: 95%;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
-
-	.asideShows h2{
-		font-size: 2rem;
-		margin-bottom: 15px;
-	}
-	.asideShows article{
-		width: 20%;
-		text-align: center;
-		margin-bottom: 30px;
-	}
-	.asideShows article img{
-		display: block;
-		width: 100%;
-		border-top-left-radius: 5px;
-		border-top-right-radius: 5px;
-	}
-	.asideShows h3{
-		background: #363433;
-		color: #e2dad8;
-		padding: 5px 0;
-		font-size: 1.4rem;
-		font-weight: 500;
-		border-bottom-left-radius: 5px;
-		border-bottom-right-radius: 5px;
-	}
-
 	article.newsCard div{
 		width: 100%;
 	}
@@ -1220,12 +982,6 @@ article.newsCard div{
 @media (max-width: 1024px){
 	.newsCard{
 		width: 45%;
-	}
-}
-
-@media (max-width: 768px){
-	.asideShows article{
-		width: 47%;
 	}
 }
 
