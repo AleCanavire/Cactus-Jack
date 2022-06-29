@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact | Cactus Jack</title>
+	<link rel="shortcut icon" href="../img/CactusJack-favicon.png">
+	<link rel="stylesheet" href="../css/style.css"> 
+</head>
+<body>
+	<nav id="navContact">
+		<div class="containerLogo">
+			<a href="index.html"> 
+				<img src="../img/CactusJack-Logo.png" alt="logo-nav">
+			</a>
+		</div>
+		<div class="list">
+			<ul>
+				<li>
+					<a href="../index.html">HOME</a>
+				</li>
+				<li>
+					<a href="shop.html">SHOP</a>
+				</li>
+				<li>
+					<a href="music.html">MUSIC</a>
+				</li>
+				<li>
+					<a href="news.html">NEWS</a>
+				</li>
+				<li>
+					<a href="contact.html">CONTACT</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- ends nav -->
+	<div class="contenedorContact bgMain">
+		<aside id="asideContact">
+			<section class="twitter">
+				<article>
+					<h2>TWITTER FEED</h2>
+					<a class="twitter-timeline" data-height="400" data-theme="dark" href="https://twitter.com/trvisXX?ref_src=twsrc%5Etfw">Tweets by trvisXX</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</article>
+			</section>
+			
+			<section class="youtube">	
+				<article>
+					<h2>RECENT POSTS</h2>
+					<div>
+						<a href="https://www.youtube.com/watch?v=7Q-WGjqpIvY" target="_blank">Travis Scott - MAFIA (2022 Billboard Music Awards)</a>
+					</div>
+				</article>
+
+				<article>
+					<div>
+						<a href="https://www.youtube.com/watch?v=KPz33BLkvho" target="_blank">Travis Scott - ESCAPE PLAN (Official Music Video)</a>
+					</div>
+				</article>
+
+				<article>
+					<div>
+						<a href="https://www.youtube.com/watch?v=ve_iZT4Huuo" target="_blank">Travis Scott - ESCAPE PLAN (Official Audio)</a>
+					</div>	
+				</article>
+
+				<article>
+					<div>
+						<a href="https://www.youtube.com/watch?v=89hJPNSNlFM" target="_blank">Travis Scott - MAFIA (Official Audio)</a>
+					</div>	
+				</article>
+
+				<article>
+					<div>
+						<a href="https://www.youtube.com/watch?v=SliqG_0MElo" target="_blank">Travis Scott, HVME - Goosebumps (Remix)</a>
+					</div>	
+				</article>
+			</section>
+		</aside>
+		<main id="mainContact">
+			<section class="containerContact textContact">
+				<h1 class="titleContact">Contact</h1>
+				<form action="envio.php">
+					<label for="name"><b>Name</b></label>
+					<input type="text" id="nombre" placeholder="Cactus Jack">
+						<br>
+					<label for="email"><b>Email</b></label>
+					<input type="email" id="email" placeholder="cactusjack@gmail.com">
+						<br>
+					<label for="mensaje"><b>Messege</b></label>
+						<br>
+					<textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+						<br>
+					<label for="localization"><b>Localization</b></label>
+					<select name="" id="localization">
+						<option value="United States">United States</option>
+						<option value="another country">Another country</option>
+					</select>
+						<br>
+					<label for="news">Do you want to receive the latest news from Cactus Jack?</label>
+					<input type="checkbox" name="news" id="news">
+						<br>
+					<input type="reset" value="Cancel">
+					<input type="reset" value="Submit">
+					<!-- le puse "reset" para que no de error de envio, ya que no existe un archivo.php -->
+				</form>
+			</section>
+		</main>
+	</div>	
+	<!-- ends main -->
+	<footer id="footerContact" class="contactFooter">
+		<div class="sizeFooter">
+			<div class="cactusFooter">
+				<a href="../index.html">
+					<img src="../img/CactusJackFooter.png" alt="logo-footer" class="cactuslogo">
+				</a>
+			</div>
+			<div class="socialNetworks">
+				<a href="https://www.facebook.com/travisscottlaflame" target="_blank">
+					<img src="../img/facebook-icon.png" alt="facebook" class="social">
+				</a>
+
+				<a href="https://twitter.com/trvisXX" target="_blank">
+					<img src="../img/twitter-icon.png" alt="twitter" class="social">
+				</a>
+
+				<a href="https://www.youtube.com/channel/UCtxdfwb9wfkoGocVUAJ-Bmg" target="_blank" >
+					<img src="../img/youtube-icon.png" alt="youtube" class="social">
+				</a>
+
+				<a href="https://www.instagram.com/cactusjack/?hl=es" target="_blank">
+					<img src="../img/instagram-icon.png" alt="instagram" class="social">
+				</a>
+			</div>
+			
+			<form action="envio.php" class="newsletter">
+				<fieldset class="form">
+					<legend>Newsletter</legend>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Nam officia quas exercitationem cum.</p>
+					<label for="email">Suscribe</label>
+					<input type="email" id="email" placeholder="cactusjack@gmail.com">
+					<input type="reset" value="Submit">
+					<!-- le puse "reset" para que no de error de envio -->
+				</fieldset>
+			</form>
+			<p class="footertext">© Cactus Jack, 2022. All rights reserved.</p>
+		</div>	
+	</footer>
+	<!-- ends footer -->
+</body>
+</html>
