@@ -5,222 +5,286 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Music | Cactus Jack</title>
 	<link rel="shortcut icon" href="../img/CactusJack-favicon.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/style.css"> 
 </head>
 <body>
-	<nav>
-		<div class="containerLogo">
-			<a href="index.html"> 
-				<img src="../img/CactusJack-Logo.png" alt="logo-nav">
+	<nav id="navContact" class="navbar navbar-expand-lg">
+	  <div class="container-fluid">
+	  	<div class="logo-div">
+		    <a href="../index.html">
+				<img class="logo-back" src="../img/CactusJack-Logo.png" alt="logo-nav">
+				<img class="logo-front" src="../img/CactusJack-Logo2.png" alt="logo-hover">
 			</a>
 		</div>
-		<div class="list">
-			<ul>
-				<li>
-					<a href="../index.html">HOME</a>
-				</li>
-				<li>
-					<a href="shop.html">SHOP</a>
-				</li>
-				<li>
-					<a href="music.html">MUSIC</a>
-				</li>
-				<li>
-					<a href="news.html">NEWS</a>
-				</li>
-				<li>
-					<a href="contact.html">CONTACT</a>
-				</li>
-			</ul>
-		</div>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="list">
+	        <li class="nav-item">
+				<a href="../index.html">HOME</a>
+			</li>
+			<li class="nav-item">
+				<a href="shop.html">SHOP</a>
+			</li>
+			<li class="nav-item">
+				<a href="music.html">MUSIC</a>
+			</li>
+			<li class="nav-item">
+				<a href="news.html">NEWS</a>
+			</li>
+			<li class="nav-item">
+				<a href="contact.html">CONTACT</a>
+			</li>
+	      </ul>
+	    </div>
+	  </div>
 	</nav>
 	<!-- ends nav -->
 	<header id="headerMusic">
-		<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x7t951g?autoplay=1" width="100%" height="100%" allowfullscreen allow="autoplay"> </iframe> </div>
+		<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x7t951g" width="100%" height="100%" allowfullscreen > </iframe> </div>
 	</header>
 	<!-- ends header -->
 	<main>
 		<h1 class="title">ALBUMS</h1>
 		<div class="background">
-			<section class="container">
+			<section class="container-albums">
 				<article class="album">
 					<a href="https://jackboys.lnk.to/JACKBOYS" target="_blank">
 						<img src="../img/music1.jpg" alt="album1" class="imgAlbum">
 					</a>
-					<table border="" class="table">
-						<tr>
-							<th>JACKBOYS</th>
-						</tr>
-						<tr>
-							<th>Descember 27, 2019</th>
-						</tr>
-						<tr>
-							<td>HIGHEST IN THE ROOM (REMIX) [Explicit] <br>
-								JACKBOYS [Explicit] <br>
-								GANG GANG [Explicit] <br>
-								HAD ENOUGH [Explicit] <br>
-								OUT WEST [Explicit] <br>
-								WHAT TO DO? [Explicit] <br>
-								GATTI [Explicit]
-							</td>
-						</tr>
-					</table>
+
+					<div class="accordion" id="accordion1">
+					  <div class="accordion-item">
+					    <h2 class="accordion-header" id="headingOne">
+					      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">JACKBOYS</button>
+					    </h2>
+					    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					      <div>
+					        <table border="" class="table">
+					        	<tr>
+					        		<td>Descember 27, 2019</td>
+					        	</tr>
+					        	<tr>
+									<td>HIGHEST IN THE ROOM (REMIX) [Explicit] <br>
+										JACKBOYS [Explicit] <br>
+										GANG GANG [Explicit] <br>
+										HAD ENOUGH [Explicit] <br>
+										OUT WEST [Explicit] <br>
+										WHAT TO DO? [Explicit] <br>
+										GATTI [Explicit]
+									</td>
+								</tr>
+							</table>
+					      </div>
+					    </div>
+					  </div>
+					</div>  
 				</article>
 
 				<article class="album">
 					<a href="https://smarturl.it/ASTROWORLD" target="_blank">
 						<img src="../img/music2.jpg" alt="album2" class="imgAlbum">
 					</a>
-					<table border="" class="table">
-						<tr>
-							<th>ASTROWORLD</th>
-						</tr>
-						<tr>
-							<th>August 3, 2018</th>
-						</tr>
-						<tr>
-							<td>Stargazing <br>
-								arousel <br>
-								Sicko Mode <br>
-								R.I.P. Screw <br>
-								Stop Trying to Be God <br>
-								No Bystanders <br>
-								Skeletons <br>
-								Wake Up <br>
-								5% Tint <br>
-								Nc-17 <br>
-								Astrothunder <br>
-								Yosemite <br>
-								Can't Say <br>
-								Who? What! <br>
-								Butterfly Effect <br>
-								Houstonfornication <br>
-								Coffee Bean
-							</td>
-						</tr>
-					</table>
+
+					<div class="accordion" id="accordion2">
+					  <div class="accordion-item">
+					    <h2 class="accordion-header" id="heading2">
+					      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">ASTROWORLD</button>
+					    </h2>
+					    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
+					      <div>
+					        <table border="" class="table">
+					        	<tr>
+					        		<td>August 3, 2018</td>
+					        	</tr>
+					        	<tr>
+									<td>Stargazing <br>
+										arousel <br>
+										Sicko Mode <br>
+										R.I.P. Screw <br>
+										Stop Trying to Be God <br>
+										No Bystanders <br>
+										Skeletons <br>
+										Wake Up <br>
+										5% Tint <br>
+										Nc-17 <br>
+										Astrothunder <br>
+										Yosemite <br>
+										Can't Say <br>
+										Who? What! <br>
+										Butterfly Effect <br>
+										Houstonfornication <br>
+										Coffee Bean
+									</td>
+								</tr>
+							</table>
+					      </div>
+					    </div>
+					  </div>
+					</div>  
 				</article>
 
 				<article class="album">
 					<a href="https://music.apple.com/ar/album/birds-in-trap-sing-mcknight/1150135681?app=itunes&ign-mpt=uo%3D4" target="_blank">
 						<img src="../img/music3.jpg" alt="album3" class="imgAlbum">
 					</a>
-					<table border="" class="table">
-						<tr>
-							<th>BIRDS IN THE TRAP SING MCKNIGHT</th>
-						</tr>
-						<tr>
-							<th>September 2, 2016</th>
-						</tr>
-						<tr>
-							<td>the ends <br>
-								way back <br>
-								coordinate <br>
-								through the late night <br>
-								beibs in the trap <br>
-								sdp interlude <br>
-								sweet sweet <br>
-								outside <br>
-								goosebumps <br>
-								first take <br>
-								pick up the phone <br>
-								lose <br>
-								guidance <br>
-								wonderful <br>
-							</td>
-						</tr>
-					</table>
+
+					<div class="accordion" id="accordion3">
+					  <div class="accordion-item">
+					    <h2 class="accordion-header" id="heading3">
+					      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">BIRDS IN THE TRAP SING MCKNIGHT</button>
+					    </h2>
+					    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">
+					      <div>
+					        <table border="" class="table">
+					        	<tr>
+					        		<td>September 2, 2016</td>
+					        	</tr>
+					        	<tr>
+									<td>
+										the ends <br>
+										way back <br>
+										coordinate <br>
+										through the late night <br>
+										beibs in the trap <br>
+										sdp interlude <br>
+										sweet sweet <br>
+										outside <br>
+										goosebumps <br>
+										first take <br>
+										pick up the phone <br>
+										lose <br>
+										guidance <br>
+										wonderful <br>
+									</td>
+								</tr>
+							</table>
+					      </div>
+					    </div>
+					  </div>
+					</div>  
 				</article>
 
 				<article class="album">
 					<a href="https://music.apple.com/us/album/rodeo-expanded-edition/1456176981" target="_blank">
 						<img src="../img/music4.jpg" alt="album4" class="imgAlbum">
 					</a>
-					<table border="" class="table">
-						<tr>
-							<th>RODEO</th>
-						</tr>
-						<tr>
-							<th>September 4, 2015</th>
-						</tr>
-						<tr>
-							<td>Oh My Dis Side <br>
-								3500 <br>
-								Wasted <br>
-								90210 <br>
-								Pray 4 Love <br>
-								Nightcrawler <br>
-								Piss On Your Grave <br>
-								Antidote <br>
-								Impossible <br>
-								Maria I'm Drunk <br>
-								Flying High <br>
-								I Can Tell <br>
-								Apple Pie <br>
-								Ok Alright <br>
-								Never Catch Me
-							</td>
-						</tr>
-					</table>
+
+					<div class="accordion" id="accordion4">
+					  <div class="accordion-item">
+					    <h2 class="accordion-header" id="heading4">
+					      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">RODEO</button>
+					    </h2>
+					    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+					      <div>
+					        <table border="" class="table">
+					        	<tr>
+					        		<td>September 4, 2015</td>
+					        	</tr>
+
+					        	<tr>
+									<td>Oh My Dis Side <br>
+										3500 <br>
+										Wasted <br>
+										90210 <br>
+										Pray 4 Love <br>
+										Nightcrawler <br>
+										Piss On Your Grave <br>
+										Antidote <br>
+										Impossible <br>
+										Maria I'm Drunk <br>
+										Flying High <br>
+										I Can Tell <br>
+										Apple Pie <br>
+										Ok Alright <br>
+										Never Catch Me
+									</td>
+								</tr>
+							</table>
+					      </div>
+					    </div>
+					  </div>
+					</div>  
 				</article>
 
 				<article class="album">
 					<a href="https://soundcloud.com/travisscott-2/sets/days-before-rodeo" target="_blank">
 						<img src="../img/music5.jpg" alt="album5" class="imgAlbum">
 					</a>
-					<table border="" class="table">
-						<tr>
-							<th>DAYS BEFORE RODEO</th>
-						</tr>
-						<tr>
-							<th>August 18, 2014</th>
-						</tr>
-						<tr>
-							<td>Days Before Rodeo The Prayer <br>
-								Mamacita <br>
-								Quintana Pt 2 <br>
-								Drugs You Should Try <br>
-								Dont Play <br>
-								Skyfall <br>
-								Zombies <br>
-								Sloppy Toppy <br>
-								Basement Freestyle <br>
-								Backyard <br>
-								Grey <br>
-								Bacc (Bonus) <br>
-							</td>
-						</tr>
-					</table>
+
+					<div class="accordion" id="accordion5">
+					  <div class="accordion-item">
+					    <h2 class="accordion-header" id="heading5">
+					      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">DAYS BEFORE RODEO</button>
+					    </h2>
+					    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+					      <div>
+					        <table border="" class="table">
+					        	<tr>
+					        		<td>August 18, 2014</td>
+					        	</tr>
+					        	<tr>
+									<td>Days Before Rodeo The Prayer <br>
+										Mamacita <br>
+										Quintana Pt 2 <br>
+										Drugs You Should Try <br>
+										Dont Play <br>
+										Skyfall <br>
+										Zombies <br>
+										Sloppy Toppy <br>
+										Basement Freestyle <br>
+										Backyard <br>
+										Grey <br>
+										Bacc (Bonus) <br>
+									</td>
+								</tr>
+							</table>
+					      </div>
+					    </div>
+					  </div>
+					</div>  
 				</article>
 
 				<article class="album">
 					<a href="https://soundcloud.com/travisscott-2/sets/owl-pharaoh" target="_blank">
 						<img src="../img/music6.jpg" alt="album6" class="imgAlbum">
 					</a>
-					<table border="" class="table">
-						<tr>
-							<th>OWL PHARAOH</th>
-						</tr>
-						<tr>
-							<th>May 21, 2013</th>
-						</tr>
-						<tr>
-							<td>Meadow Creek <br>
-								Bad Mood / Shit On You <br>
-								Upper Echelon <br>
-								Chaz Interlude <br>
-								Uptown <br>
-								Hell of a Night<br>
-								Blocka La Flame <br>
-								Naked <br>
-								Dance On the Moon <br>
-								MIA <br>
-								Drive <br>
-								Quintana <br>
-								Bandz <br>
-							</td>
-						</tr>
-					</table>
+
+					<div class="accordion" id="accordion6">
+					  <div class="accordion-item">
+					    <h2 class="accordion-header" id="heading6">
+					      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6">OWL PHARAOH</button>
+					    </h2>
+					    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
+					      <div>
+					        <table border="" class="table">
+					        	<tr>
+					        		<td>May 21, 2013</td>
+					        	</tr>
+
+					        	<tr>
+									<td>Meadow Creek <br>
+										Bad Mood / Shit On You <br>
+										Upper Echelon <br>
+										Chaz Interlude <br>
+										Uptown <br>
+										Hell of a Night<br>
+										Blocka La Flame <br>
+										Naked <br>
+										Dance On the Moon <br>
+										MIA <br>
+										Drive <br>
+										Quintana <br>
+										Bandz <br>
+									</td>
+								</tr>
+							</table>
+					      </div>
+					    </div>
+					  </div>
+					</div>
 				</article>
 			</section>
 		</div>
@@ -229,10 +293,15 @@
 	<footer>
 		<div class="sizeFooter">
 			<div class="cactusFooter">
-				<a href="../index.html">
+				<a href="index.html">
 					<img src="../img/CactusJackFooter.png" alt="logo-footer" class="cactuslogo">
 				</a>
 			</div>
+
+			<form class="newsletter">
+				<input type="email" id="email" placeholder="ENTER EMAIL FOR UPDATES">
+				<button type="submit">SUBMIT</button>
+			</form>
 			<div class="socialNetworks">
 				<a href="https://www.facebook.com/travisscottlaflame" target="_blank">
 					<img src="../img/facebook-icon.png" alt="facebook" class="social">
@@ -250,20 +319,10 @@
 					<img src="../img/instagram-icon.png" alt="instagram" class="social">
 				</a>
 			</div>
-			
-			<form action="envio.php" class="newsletter">
-				<fieldset class="form">
-					<legend>Newsletter</legend>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Nam officia quas exercitationem cum.</p>
-					<label for="email">Suscribe</label>
-					<input type="email" id="email" placeholder="cactusjack@gmail.com">
-					<input type="reset" value="Submit">
-					<!-- le puse "reset" para que no de error de envio -->
-				</fieldset>
-			</form>
 			<p class="footertext">© Cactus Jack, 2022. All rights reserved.</p>
 		</div>
 	</footer>
 	<!-- ends footer -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -8,39 +8,63 @@
 }
 
 html{
-	background-color: #e2dad8;
 	font-size: 62.5%;
 	min-height: 100%;
 	position: relative;
 }
 
 body{
+	background-color: #e2dad8;
 	min-height: 100%;
 	width: 100%;
 }
 
-nav{
+.navbar{
 	padding: 10px 20px;
 	background-color: #D8CCC9;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	align-items: center;
 }
-
+.container-fluid{
+	padding: 0;
+}
 	nav div a,
 	nav div img{
-		width: 70px;
+		width: 60px;
+	}
+	.logo-div{
+		position: relative;
+		width: 60px;
+		height: 55px;
+	}
+		.logo-div .logo-front{
+			position: absolute;
+			width: 60px;
+			height: 55px;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			transition: opacity .5s ease-in-out;
+		}
+			.logo-div .logo-front:hover{
+				opacity: 1;
+			}
+
+	.list{
+		width: 40%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 
 	nav ul{
 		font-family: 'Courier Prime', monospace;
 		list-style: none;
 		display: flex;
+    	justify-content: space-between;
+		margin-bottom: 0;
+		padding-left: 0;
 	}
  
 		nav ul li{
-		padding-left: 50px;
 		transform: translateY(0px);
 		transition: transform 1s;
 		}
@@ -67,10 +91,6 @@ header{
 		width: 100%;
 	}
 
-main{
-	width: 100%;
-}
-
 footer{
 	background: #363433;
 	width: 100%;
@@ -83,6 +103,7 @@ footer{
 .title{
 	color: #363433;
 	font-size: 3rem;
+	font-weight: 600;
 	text-align: center;
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -103,6 +124,8 @@ footer{
 
 #mainHome{
 	grid-area: mainHome;
+	width: 35%;
+	height: 100%;
 }
 
 /*======== GRID Shop ========*/
@@ -136,43 +159,34 @@ footer{
 }
 
 /*=========== home ===========*/
-.contenedorHome{
-	display: grid;
-	grid-template-columns: 65% 35%;
-	grid-template-rows: auto;
-	grid-template-areas:
-	"mainHome asideHome";
-}
-
 .bgHome{
 	background-image: url(../img/CactusJackImagenHero.jpeg);
 	background-size: cover;
 	background-position: center center;
 	width: 100%;
 	height: 100vh;
-	padding-top: 100px;
+	padding: 100px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
 }
-	.bgHome div picture{
- 		display: none;
-	}
 
 .tour{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	width: 100%;
-	height: 20%;
+	width: 35%;
 }
 	.tour h1{
 		width: 100%;
 		text-align: center;
-		font-size: 2rem;
+		font-size: 2.5rem;
+		font-weight: 600;
 	}
 	.tour div{
 		display: flex;
 		flex-wrap: wrap;
-		align-content: center;	
-		width: 90%;
+		width: 100%;
 		height: auto;
 		padding: 10px;
 		margin-bottom: 5px;
@@ -180,33 +194,86 @@ footer{
 		color: #e2dad8;
 		font-size: 1.2rem;
 	}
-	.tour div a{
+		.tour div a{
 			color: #e2dad8;
 			text-decoration-line: none;
 		}
 
 .date{
 	width: 15%;
+	margin-bottom: 0;
 }
 .country{
 	width: 35%;
+	margin-bottom: 0;
 }
-.show{
+.shows{
 	width: 38%;
+	margin-bottom: 0;
 }
 .tickets{
 	width: 12%;
 	text-align: right;
+	margin-bottom: 0;
+}
+
+.offcanvas-header{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.offcanvas-body {
+    display: flex;
+    align-items: center;
+}
+
+.offcanvas {
+	--bs-offcanvas-bg: none;
+	padding: 50px 0 50px 35px;
+}
+
+.offcanvas.offcanvas-start {
+    width: 35%;
+    border-right: none;
+}
+
+.offcanvas-backdrop.show {
+	width: 100%;
+	margin-bottom: 0;
+	background-color: rgb(0, 0, 0, .4);
+	opacity: .8;
+	backdrop-filter: blur(3rem);
+}
+
+.btn-close {
+	background-color: #FFFFFF;
+}
+
+.div-btn{
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.btn-history{
+	height: 100%;
+	border: none !important;
+	background: rgb(0, 0, 0, .1);
 }
 
 .containerText{
-	padding-left: 50px;
-	width: 45%;
 	display: flex;
 	flex-wrap: wrap;
 }
+	.containerText h1{
+		color: #FFFFFF;
+		font-size: 2.6rem;
+		font-weight: 600;
+		letter-spacing: 1.2rem;
+	}
 
 .textHistory{
+	color: #FFFFFF;
 	width: 100%;
 	font-size: 1.7rem;
 	text-align: left;
@@ -258,6 +325,11 @@ footer{
 			.asideForm form{
 				font-size: 1.7rem;
 			}
+
+.form-check .form-check-input{
+    background-color: #e2dad8;
+    border-color: #363433;
+}
 		
 /* shoes */
 	.shoes{
@@ -334,7 +406,7 @@ footer{
 /*========= ends shop =========*/
 
 /*=========== music ===========*/
-.container{
+.container-albums{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -368,6 +440,28 @@ footer{
 	border-color: #363433;
 	font-size: 1.5rem;
 	text-align: left;
+	margin: 0;
+}
+.accordion-button:not(.collapsed) {
+	color: #e2dad8;
+	background-color: #4D4947;
+}
+
+.accordion-button{
+	color: #e2dad8;
+	background-color: #4D4947;
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: #363433;
+    outline: 0;
+    box-shadow: none !important;
+}
+.accordion {
+    --bs-accordion-border-color: none !important;
 }
 /*========= ends music =========*/
 
@@ -503,17 +597,42 @@ article.newsCard div{
 			}
 
 .containerContact{
-	padding-left: 50px;
-	width: 45%;
+	padding-left: 30px;
+	width: 63%;
 }
 .titleContact{
 	font-size: 3rem;
+	font-weight: 600;
 }
 
 .textContact{
 	font-size: 1.8rem;
 	border-bottom-color: #363433;
-	line-height: 2.5rem;
+	line-height: 2rem;
+}
+
+.btn-brown{
+	background: #e2dad8;
+	color: #363433;
+}
+
+.form-check-input{
+    background-color: #e2dad8;
+    border-color: #e2dad8;
+}
+	.form-check-input:checked {
+	    background-color: #4D4947;
+	    border-color: #4D4947;
+	}
+
+.form-check-input:focus {
+    border-color: #4D4947;
+    box-shadow: none;
+}
+
+.mx-3{
+	margin-left: 0!important;
+	margin-right: 0!important;
 }
 
 .contactFooter{
@@ -549,30 +668,48 @@ article.newsCard div{
 	justify-content: center;
 	margin-top: 10px;
 }
+	.socialNetworks a{
+		margin-left: 25px;
+		margin-right: 25px;
+	}
 
 .social{
-	width: 25px;
 	height: 25px;
-	padding-left: 10px;
-	padding-right: 10px;
 }
 
 .newsletter{
-	width: 100%;
+	width: 50%;
 	font-size: 1.2rem;
 	color: #e2dad8;
 	text-align: center;
 	line-height: 2.5rem;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	margin-top: 10px;
 }
-
-.form{
-	padding: 0.7rem 1rem 1.5rem 1rem;
-}
+	.newsletter input{
+		font-size: 1.4rem;
+		text-align: center;
+		color: #e2dad8;
+		background-color: transparent;
+		border: none;
+	}
+		.newsletter input::placeholder{
+			color: #e2dad8;
+		}
+		.newsletter input:hover{
+			background: #403E3D;
+		}
+	.newsletter button{
+		background: transparent;
+		color: #e2dad8;
+		font-size: 1.2rem;
+		border: none;
+	}
 
 .footertext{
+	width: 100%;
 	color: #e2dad8;
 	text-align: center;
 	font-size: 1rem;
@@ -583,114 +720,26 @@ article.newsCard div{
 
 /*====== media queries nav ======*/
 @media (max-width: 1200px){
-	nav{
-		justify-content: center;
-	}
-
-	nav div a{
-		width: 60px;
-	}
-
-	nav div img{
-		width: 60px;
-		display: flex;
-		justify-content: center;
-	}
-
-	.list{
-		width: 45%;
-	}
-
-	nav ul{
-		margin-top: 10px;
-		display: flex;
-		justify-content: space-between;
-	}
-
-	nav ul li{	
-		padding: 0;
-	}
-
-	nav ul li a{
-		font-size: 2rem;
-	}
-
-	.containerLogo{
-		width: 100%;
-		height: 55px;
-		display: flex;
-		justify-content: center;
-	}
-}
-
-@media (max-width: 1024px){
 	.list{
 		width: 50%;
 	}
-	nav ul li a{
+}
+
+@media (max-width: 992px){
+	.list{
+		margin-top: 10px;
+		flex-direction: column;
+	}
+		nav ul li a{
 		font-size: 1.8rem;
 	}
 }
-
-@media (max-width: 768px){
-	.list{
-	width: 65%;
-	}
-}
-
-@media (max-width: 600px){
-	.list{
-		width: 80%;
-	}
-	nav div a{
-		width: 50px;
-	}
-
-	nav div img{
-		width: 50px;
-	}
-
-	nav ul li a{
-		font-size: 1.5rem;
-	}
-
-	.containerLogo{
-		height: 45px;
-	}
-}
-
-@media (max-width: 480px){
-	.list{
-		width: 90%;
-	}
-
-	nav ul li a{
-		font-size: 1.3rem;
-	}
-}
-@media (max-width: 320px){
-	.list{
-		width: 100%;
-	}
-	nav ul li a{
-		font-size: 1.2rem;
+@media (min-width: 992px){
+	.navbar-expand-lg .navbar-collapse {
+    	justify-content: flex-end;
 	}
 }
 /*====== media queries footer ======*/
-@media (max-width: 1200px){
-	.newsletter{
-		font-size: 1.1rem;
-		line-height: 2rem;
-	}
-	.form{
-		padding: 0rem 0.5rem 1rem 0.5rem;
-	}
-	.social{
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-}
-
 @media (max-width: 1024px){
 	.sizeFooter{
 		width: 90%;
@@ -698,10 +747,6 @@ article.newsCard div{
 }
 
 @media (max-width: 768px){
-	.newsletter{
-		font-size: 1rem;
-	}
-
 	.sizeFooter{
 		width: 95%;
 	}
@@ -711,51 +756,31 @@ article.newsCard div{
 	.cactusFooter{
 		height: 45px;
 	}
-
 	.cactuslogo{;
 		height: 45px;
 	}
-	.socialNetworks{
-		width: 50%;
-		justify-content: space-between;
+	.newsletter{
+		width: 100%;
 	}
-
+	.socialNetworks{
+		width: 100%;
+	}
 	.social{
 		width: 25px;
 		height: 25px;
-		padding: 0;
 	}
 }
 
 @media (max-width: 480px){
+	.socialNetworks a{
+		margin: 0;
+	}
 	.socialNetworks{
-		width: 90%;
 		justify-content: space-evenly;
 	}
 }
 /*====== media queries home ======*/
 @media (max-width: 1200px){
-	.contenedorHome{
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: auto;
-		grid-template-areas:
-		"imgHome"
-		"mainHome"
-		"asideHome";
-		height: auto;
-	}
-
-	.containerText{
-		justify-content: center;
-		padding-left: 0px;
-		width: 100%;
-	}
-
-	.bgHome{
-		padding-top: 0;
-		background-image: none;
-	}
 	#imgHome{
 		width: 100%;
 		height: 100vh;
@@ -763,47 +788,65 @@ article.newsCard div{
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
+		display: flex;
+		justify-content: center;
+	}
+	#mainHome{
+		width: 80%;
+		margin-bottom: 20px;
+	}
+
+	.bgHome{
+		height: auto;
+		flex-wrap: wrap;
+		padding: 0;
+		background-image: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.containerText{
+		justify-content: center;
+		width: 100%;
 	}
 
 	.tour{
+		width: 80%;
 		height: auto;
 		margin-bottom: 50px;
 	}
 
-	.containerText{
-		margin-bottom: 100px;
-	}
-
-	.p1history{
-		width: 100%;
-		display: flex;
-		justify-content: center;
-	}
-
-	.p2history{
-		width: 100%;
-		display: flex;
-		justify-content: center;
-	}
-
 	.textHistory{
-		font-size: 1.3rem;
 		text-align: center;
-		width: 70%;
+	}
+
+	.btn-history{
+		width: 100%;
+	}
+	.offcanvas.offcanvas-start {
+		padding: 25px;
+		width: 100%;
+	}
+	.offcanvas-body {
+	    padding: 0;
 	}
 }
 
 @media (max-width: 1024px){
-
-	.textHistory{
-		font-size: 1.2rem;
+	#mainHome{
+		width: 90%;
+	}
+	.tour{
 		width: 90%;
 	}
 }
 
 @media (max-width: 768px){
-	.textHistory{
-		font-size: 1.1rem;
+	#mainHome{
+		width: 95%;
+	}
+	.tour{
+		width: 95%;
 	}
 	.tour div{
 		font-size: 1.1rem;
@@ -811,11 +854,8 @@ article.newsCard div{
 }
 
 @media (max-width: 600px){
-	.containerText{
-		margin-bottom: 60px;
-	}
 	.textHistory{
-		font-size: 1rem;
+		font-size: 1.5rem;
 	}
 	.tour div{
 		font-size: 1rem;
@@ -824,7 +864,7 @@ article.newsCard div{
 
 @media (max-width: 480px){
 	.textHistory{
-		font-size: 0.9rem;
+		font-size: 1.1rem;
 	}
 	.tour div{
 		font-size: 0.9rem;
@@ -843,6 +883,12 @@ article.newsCard div{
 			.asideForm form{
 				font-size: 1.5rem;
 			}
+
+.form-check .form-check-input{
+	float: none;
+    margin-left: 0;
+}
+
 	.shoes{
 		width: 45%;
 		margin: 0 0 100px 0;
@@ -924,6 +970,7 @@ article.newsCard div{
 @media(max-width: 768px){
 	.album{
 		width: 85%;
+		margin-bottom: 30px;
 	}
 }
 
@@ -1024,9 +1071,16 @@ article.newsCard div{
 		justify-content: center;
 	}
 
-		.containerContact form{
-			background-color: #c3b9b7;
-			width: 40%;
+	.containerContact form{
+		background-color: #c3b9b7;
+		width: 40%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+		.containerContact form div{
+			width: 100%;
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
@@ -1036,15 +1090,20 @@ article.newsCard div{
 			.containerContact form textarea{
 				width: 100%;
 			}
-
-			.containerContact form input{
-				width: 100%;
-				text-align: center;
+			.form-check{
+				padding-left: 0;
+			}
+			.form-switch .form-check-input {
+			    margin-left: 0;
 			}
 
 	.titleContact{
 		width: 100%;
 		text-align: center;
+	}
+	.mx-3{
+		margin-left: 1rem !important;
+		margin-right: 1rem !important;
 	}
 }
 

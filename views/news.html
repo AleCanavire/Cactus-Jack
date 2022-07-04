@@ -5,43 +5,70 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>News | Cactus Jack</title>
 	<link rel="shortcut icon" href="../img/CactusJack-favicon.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-	<nav>
-		<div class="containerLogo">
-			<a href="index.html"> 
-				<img src="../img/CactusJack-Logo.png" alt="logo-nav">
+	<nav id="navContact" class="navbar navbar-expand-lg">
+	  <div class="container-fluid">
+	  	<div class="logo-div">
+		    <a href="../index.html">
+				<img class="logo-back" src="../img/CactusJack-Logo.png" alt="logo-nav">
+				<img class="logo-front" src="../img/CactusJack-Logo2.png" alt="logo-hover">
 			</a>
 		</div>
-		<div class="list">
-			<ul>
-				<li>
-					<a href="../index.html">HOME</a>
-				</li>
-				<li>
-					<a href="shop.html">SHOP</a>
-				</li>
-				<li>
-					<a href="music.html">MUSIC</a>
-				</li>
-				<li>
-					<a href="news.html">NEWS</a>
-				</li>
-				<li>
-					<a href="contact.html">CONTACT</a>
-				</li>
-			</ul>
-		</div>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="list">
+	        <li class="nav-item">
+				<a href="../index.html">HOME</a>
+			</li>
+			<li class="nav-item">
+				<a href="shop.html">SHOP</a>
+			</li>
+			<li class="nav-item">
+				<a href="music.html">MUSIC</a>
+			</li>
+			<li class="nav-item">
+				<a href="news.html">NEWS</a>
+			</li>
+			<li class="nav-item">
+				<a href="contact.html">CONTACT</a>
+			</li>
+	      </ul>
+	    </div>
+	  </div>
 	</nav>
 	<!-- ends nav -->
 	<header>
-		<picture>
-			<source media="(min-width:1024px)" srcset="../img/newsHero.jpg">
-			<source media="(min-width:768px)" srcset="../img/newsHero1024.jpg">
-			<source media="(min-width:0px)" srcset="../img/newsHero768.jpg">
-			<img src="img/CactusJackImagenHero.jpeg" alt="imagenHero" style="width:100%;">
-		</picture>
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+		  <div class="carousel-indicators">
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  </div>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="../img/show1.jpg" class="d-block w-100" alt="show1">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="../img/show2.jpg" class="d-block w-100" alt="show2">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="../img/show3.jpg" class="d-block w-100" alt="show3">
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
 	</header>
 		<!-- ends header -->
 	<main>
@@ -135,13 +162,18 @@
 		</div>
 	</main>
 	<!-- ends main -->
-	<footer>
+	<footer id="footerShop">
 		<div class="sizeFooter">
 			<div class="cactusFooter">
-				<a href="../index.html">
+				<a href="index.html">
 					<img src="../img/CactusJackFooter.png" alt="logo-footer" class="cactuslogo">
 				</a>
 			</div>
+
+			<form class="newsletter">
+				<input type="email" id="email" placeholder="ENTER EMAIL FOR UPDATES">
+				<button type="submit">SUBMIT</button>
+			</form>
 			<div class="socialNetworks">
 				<a href="https://www.facebook.com/travisscottlaflame" target="_blank">
 					<img src="../img/facebook-icon.png" alt="facebook" class="social">
@@ -159,20 +191,10 @@
 					<img src="../img/instagram-icon.png" alt="instagram" class="social">
 				</a>
 			</div>
-			
-			<form action="envio.php" class="newsletter">
-				<fieldset class="form">
-					<legend>Newsletter</legend>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Nam officia quas exercitationem cum.</p>
-					<label for="email">Suscribe</label>
-					<input type="email" id="email" placeholder="cactusjack@gmail.com">
-					<input type="reset" value="Submit">
-					<!-- le puse "reset" para que no de error de envio -->
-				</fieldset>
-			</form>
 			<p class="footertext">© Cactus Jack, 2022. All rights reserved.</p>
 		</div>
 	</footer>
 	<!-- ends footer -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
