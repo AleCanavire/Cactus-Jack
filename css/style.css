@@ -65,12 +65,12 @@ body{
 	}
  
 		nav ul li{
-		transform: translateY(0px);
-		transition: transform 1s;
+			transform: scale(1.0);
+			transition: transform 1s;
 		}
 		nav ul li:hover{
-		transform: translateY(-3px);
-		transition: transform 1s;
+			transform: scale(1.05);
+			transition: transform 1s;
 		}
 
 			nav ul li a{
@@ -80,7 +80,7 @@ body{
 			}
 
 			nav ul li a:hover{
-				color: #2F2C2C;
+				color: #363433;
 				font-weight: 600;
 			}	
 
@@ -217,6 +217,11 @@ footer{
 	margin-bottom: 0;
 }
 
+.offcanvas {
+	--bs-offcanvas-bg: none;
+	padding-left:35px;
+	justify-content: center;
+}
 .offcanvas-header{
 	display: flex;
 	justify-content: flex-end;
@@ -225,11 +230,7 @@ footer{
 .offcanvas-body {
     display: flex;
     align-items: center;
-}
-
-.offcanvas {
-	--bs-offcanvas-bg: none;
-	padding: 50px 0 50px 35px;
+    flex-grow: 0;
 }
 
 .offcanvas.offcanvas-start {
@@ -240,8 +241,8 @@ footer{
 .offcanvas-backdrop.show {
 	width: 100%;
 	margin-bottom: 0;
-	background-color: rgb(0, 0, 0, .4);
-	opacity: .8;
+	background-color: rgb(0, 0, 0, .6);
+	opacity: 1;
 	backdrop-filter: blur(3rem);
 }
 
@@ -253,6 +254,14 @@ footer{
 	height: 100%;
 	display: flex;
 	align-items: center;
+}
+
+.btn:hover {
+    background-color: rgb(0, 0, 0, .15);
+}
+
+.btn:focus {
+    background-color: rgb(0, 0, 0, .1);
 }
 
 .btn-history{
@@ -386,7 +395,7 @@ footer{
 		justify-content: space-around;
 	}	
 	.tshirt{
-		width: 25%;
+		width: 30%;
 		margin: 0 10px 100px 10px;
 		transform: scale(1.0);
 		transition: transform 0.8s;
@@ -838,6 +847,17 @@ article.newsCard div{
 	}
 	.tour{
 		width: 90%;
+	}
+}
+
+@media (max-width: 992px){
+	.navbar-toggler {
+	    border: none;
+	}
+	.navbar-toggler-icon{
+	    width: 3.2em;
+	    height: 3.2em;
+	    background-image: url(../img/burger-toggle.png);
 	}
 }
 
