@@ -66,11 +66,11 @@ body{
  
 		nav ul li{
 			transform: scale(1.0);
-			transition: transform 1s;
+			transition: transform .5s;
 		}
 		nav ul li:hover{
 			transform: scale(1.05);
-			transition: transform 1s;
+			transition: transform .5s;
 		}
 
 			nav ul li a{
