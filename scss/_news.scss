@@ -1,0 +1,47 @@
+//news
+.containerNews{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-evenly;
+	.newsCard{
+		width: 45%;
+		margin-bottom: 50px;
+		display: flex;
+		div{
+			width: 50%;
+			.imgNews{
+				width: 100%;
+			}
+		}
+		.textCard{
+			display: block;
+			padding-left: 25px;
+			.dateText{
+				background-color: $lightBeige;
+				font-size: 1.2rem;
+				font-weight: $regular;
+			}
+			.titleCardNews{
+				background-color: $lightBeige;
+				font-size: 1.6rem;
+				font-weight: $bold;
+			}
+			.textNews{
+				background-color: $lightBeige;
+				font-weight: $regular;
+				font-size: 1.4rem;
+				text-align: justify;
+			}
+			a .button{
+				padding: 3px 5px;
+				border: none;
+				border-radius: 3px;
+				background: $darkBrown;
+				color: $lightBeige;
+				font-size: 1.3rem;
+				cursor: pointer;
+			}
+		}
+	}
+}

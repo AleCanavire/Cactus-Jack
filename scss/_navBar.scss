@@ -1,0 +1,64 @@
+//nav
+.navbar{
+	padding: 10px 20px;
+	background-color: $beige;
+	.container-fluid{
+		padding: 0;
+		.logo-div{
+			position: relative;
+			width: 60px;
+			height: 55px;
+			a{
+				width: 60px;
+				height: 55px;
+				.logo-back{
+					width: 60px;
+					height: 55px;
+				}
+				.logo-front{
+					position: absolute;
+					width: 60px;
+					height: 55px;
+					top: 0;
+					left: 0;
+					opacity: 0;
+					transition: opacity .5s ease-in-out;
+					&:hover{
+						opacity: 1;
+					}
+				}
+			}
+		}
+		.list{
+			width: 40%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		ul{
+			font-family: 'Courier Prime', monospace;
+			list-style: none;
+			display: flex;
+	    	justify-content: space-between;
+			margin-bottom: 0;
+			padding-left: 0;
+			li{
+				transform: scale(1.0);
+				transition: transform .5s;
+				&:hover{
+					transform: scale(1.05);
+					transition: transform .5s;
+				}
+				a{
+					color:$lightBrown;
+					text-decoration: none;
+					font-size: 2.2rem;
+					&:hover{
+						color:$darkBrown;
+						font-weight: $bold;
+					}
+				}
+			}
+		}
+	}
+}

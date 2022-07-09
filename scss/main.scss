@@ -1,0 +1,33 @@
+//font
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+//reset
+*{
+	font-family: 'Courier Prime', monospace;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 62.5%;
+	min-height: 100%;
+	position: relative;
+}
+body{
+	background-color: #e2dad8;
+	min-height: 100%;
+	width: 100%;
+}
+
+//imports
+@import "_vars";
+@import "_navBar";
+@import "_home";
+@import "_shop";
+@import "_music";
+@import "_news";
+@import "_contact";
+@import "_footer";
+@import "_breakpoints";
+
+

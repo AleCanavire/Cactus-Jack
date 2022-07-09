@@ -1,0 +1,111 @@
+//contact
+.contenedorContact{
+	display: grid;
+	grid-template-columns: 60% 40%;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"mainContact asideContact";
+}
+.bgMain{
+	background-image: url(../img/contactBackground.jpg);
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: auto;
+	padding-top: 100px;
+	#asideContact{
+		.twitter{
+			width: 100%;
+			height: auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			article{
+				width: 90%;
+				h2{
+					text-align: center;
+					font-size: 2rem;
+					font-weight: $regular;
+					padding: 5px;
+					background: $brown;
+					color: $lightBeige;
+					border-radius: 5px;
+					margin-bottom: 5px;
+				}
+			}
+		}
+		.youtube{
+			width: 100%;
+			margin-top: 15px;
+			margin-bottom: 100px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			article{
+				width: 90%;
+				height: auto;
+				h2{
+					text-align: center;
+					font-size: 2rem;
+					font-weight: $regular;
+					padding: 5px;
+					background: $brown;
+					color: $lightBeige;
+					border-radius: 5px;
+					margin-bottom: 5px;
+				}
+				div{
+					padding: 8px 0;
+					width: 100%;
+					text-align: center;
+					background: $darkBrown;
+					border-radius: 5px;
+					margin-bottom: 3px;
+					a{
+						text-decoration-line: none;
+						font-size: 1.2rem;
+						color: $lightBeige;
+					}
+				}
+			}
+		}
+	}
+	#mainContact{
+		.containerContact{
+			padding-left: 30px;
+			width: 63%;
+			.titleContact{
+				font-size: 3rem;
+				font-weight: $bold;
+			}
+		}
+	}	
+}
+.textContact{
+	font-size: 1.8rem;
+	border-bottom-color: $darkBrown;
+	line-height: 2rem;
+}
+.btn-brown{
+	background: $lightBeige;
+	color: $darkBrown;
+}
+.form-check-input{
+    background-color: $lightBeige;
+    border-color: $lightBeige;
+    &:checked {
+	    background-color: $brown;
+	    border-color: $brown;
+	}
+	&:focus {
+	    border-color: $brown;
+	    box-shadow: none;
+	}
+}
+.mx-3{
+	margin-left: 0!important;
+	margin-right: 0!important;
+}
+.contactFooter{
+	position: relative;
+}

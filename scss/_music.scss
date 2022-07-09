@@ -1,0 +1,60 @@
+//music
+.container-albums{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-evenly;
+	.album{
+		width: 30%;
+		height: auto;
+		margin-bottom: 70px;
+		a .imgAlbum{
+			width: 100%;
+			border-radius: 10px;
+			margin-bottom: 15px;
+			transform: scale(1.0);
+			transition: transform 1s;
+			&:hover{
+				transform: scale(1.05);
+				transition: transform 1s;
+			}
+		}
+		.accordion {
+		    --bs-accordion-border-color: none !important;
+		    .accordion-item{
+		    	h2{
+			    	.accordion-button{
+						color: $lightBeige;
+						background-color: $brown;
+						font-size: 1.4rem;
+						font-weight: $bold;
+						&:focus {
+						    z-index: 3;
+						    border-color: $darkBrown;
+						    outline: 0;
+						    box-shadow: none !important;
+						}
+						&:not(.collapsed) {
+							color: $lightBeige;
+							background-color: $brown;
+						}
+					}
+				}
+				.accordion-collapse div{
+					.table{
+						background-color: $lightBeige;
+						width: 100%;
+						color: $darkBrown;
+						border-color: $darkBrown;
+						font-size: 1.5rem;
+						text-align: left;
+						margin: 0;
+					}
+				}
+		    }
+		}
+	}
+}
+
+

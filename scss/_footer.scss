@@ -1,0 +1,78 @@
+//footer
+footer{
+	background: #363433;
+	width: 100%;
+	bottom: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	.sizeFooter{
+		width: 70%;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		.cactusFooter{
+			width: 100%;
+			height: 50px;
+			display: flex;
+			justify-content: center;
+			margin-top: 10px;
+			a .cactuslogo{
+				height: 50px;
+				padding-left: 10px;
+			}
+		}
+		.newsletter{
+			width: 50%;
+			font-size: 1.2rem;
+			color: #e2dad8;
+			text-align: center;
+			line-height: 2.5rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin-top: 10px;
+			input{
+				font-size: 1.4rem;
+				text-align: center;
+				color: #e2dad8;
+				background-color: transparent;
+				border: none;
+				&::placeholder{
+					color: #e2dad8;
+				}
+				&:hover{
+					background: #4D4947;
+				}
+			}
+			button{
+				background: transparent;
+				color: #e2dad8;
+				font-size: 1.2rem;
+				border: none;
+			}
+		}
+		.socialNetworks{
+			width: 100%;
+			height: 25px;
+			display: flex;
+			justify-content: center;
+			margin-top: 10px;
+			a{
+				margin-left: 25px;
+				margin-right: 25px;
+				.social{
+					height: 25px;
+				}
+			}
+		}
+		.footertext{
+			width: 100%;
+			color: #e2dad8;
+			text-align: center;
+			font-size: 1rem;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+}

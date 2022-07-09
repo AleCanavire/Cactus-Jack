@@ -1,0 +1,187 @@
+header{
+	line-height: 0;
+	img{
+		width: 100%;
+	}
+}
+
+.title{
+	color: $darkBrown;
+	font-size: 3rem;
+	font-weight: $bold;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.background{
+	background-image: url(../img/cactustrame.png);
+}
+
+//GRID_Home
+#imgHome{
+	grid-area: imgHome;
+}
+#mainHome{
+	grid-area: mainHome;
+	width: 35%;
+	height: 100%;
+}
+#asideHome{
+	grid-area: asideHome;
+}
+
+//GRID_Shop
+#navShop{
+	grid-area: navShop;
+}
+#headerShop{
+	grid-area: headerShop;
+}
+#asideShop{
+	grid-area: asideShop;
+}
+#mainShop{
+	grid-area: mainShop;
+}
+#footerShop{
+	grid-area: footerShop;
+}
+
+//GRID_Contact
+#asideContact{
+	grid-area: asideContact;
+}
+#mainContact{
+	grid-area: mainContact;
+}
+
+//HOME
+	//main
+.bgHome{
+	background-image: url(../img/CactusJackImagenHero.jpeg);
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 100vh;
+	padding: 100px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	#mainHome{
+		.div-btn{
+			height: 100%;
+			display: flex;
+			align-items: center;
+			.btn{
+				&:hover {
+			   		background-color:rgba(0, 0, 0, .15);
+				}
+				&:focus {
+				    background-color: rgba(0, 0, 0, .1);
+				}
+			}
+			.btn-history{
+				height: 100%;
+				border: none !important;
+				background:rgba(0, 0, 0, .1);
+			}
+		}
+		.offcanvas{
+			--bs-offcanvas-bg: none;
+			padding-left:35px;
+			justify-content: center;
+			.offcanvas-header{
+				display: flex;
+				justify-content: flex-end;
+				.btn-close{
+					background-color: #FFFFFF;
+				}
+			}
+			.offcanvas-body{
+			    display: flex;
+			    align-items: center;
+			    flex-grow: 0;
+			    .containerText{
+					display: flex;
+					flex-wrap: wrap;
+					h1{
+						color: #FFFFFF;
+						font-size: 2.6rem;
+						font-weight: $bold;
+						letter-spacing: 1.2rem;
+					}
+					div{
+						.textHistory{
+							color: #FFFFFF;
+							width: 100%;
+							font-size: 1.7rem;
+							text-align: left;
+						}
+					}
+				}
+			}
+		}
+	}
+	.tour{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 35%;
+		h2{
+			width: 100%;
+			text-align: center;
+			font-size: 2.5rem;
+			font-weight: $bold;
+		}
+		div{
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			height: auto;
+			padding: 10px;
+			margin-bottom: 5px;
+			background: $darkBrown;
+			color: $lightBeige;
+			font-size: 1.2rem;
+			a{
+				color: $lightBeige;
+				text-decoration-line: none;
+			}
+			.date{
+				width: 15%;
+				margin-bottom: 0;
+			}
+			.country{
+				width: 35%;
+				margin-bottom: 0;
+			}
+			.shows{
+				width: 38%;
+				margin-bottom: 0;
+			}
+			.tickets{
+				width: 12%;
+				text-align: right;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.offcanvas.offcanvas-start {
+    width: 35%;
+    border-right: none;
+}
+
+.offcanvas-backdrop.show {
+	width: 100%;
+	margin-bottom: 0;
+	background-color:rgba(0, 0, 0, .6);
+	opacity: 1;
+	backdrop-filter: blur(3rem);
+}
+
+.homeFooter{
+	position: relative;
+}

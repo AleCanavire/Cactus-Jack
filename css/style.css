@@ -177,7 +177,7 @@ footer{
 	justify-content: center;
 	width: 35%;
 }
-	.tour h1{
+	.tour h2{
 		width: 100%;
 		text-align: center;
 		font-size: 2.5rem;
@@ -376,7 +376,7 @@ footer{
 	.subtitle{
 		font-size: 1.7rem;
 		font-weight: 500;
-		color: #BCB4B2;
+		color: #D8CCC9;
 	}
 
 	.price{
@@ -524,6 +524,7 @@ article.newsCard div{
 	border-radius: 3px;
 	background: #363433;
 	color: #e2dad8;
+	font-size: 1.3rem;
 	cursor: pointer;
 }
 /*========= ends news =========*/
@@ -708,7 +709,7 @@ article.newsCard div{
 			color: #e2dad8;
 		}
 		.newsletter input:hover{
-			background: #403E3D;
+			background: #4D4947;
 		}
 	.newsletter button{
 		background: transparent;
@@ -1092,7 +1093,7 @@ article.newsCard div{
 	}
 
 	.containerContact form{
-		background-color: #c3b9b7;
+		background-color: rgba(200,189,188,255);
 		width: 40%;
 		display: flex;
 		flex-wrap: wrap;

@@ -1,0 +1,105 @@
+//grid-shop
+.contenedorShop{
+	display: grid;
+	grid-template-columns: 15% 85%;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"navShop navShop"
+	"headerShop headerShop"
+	"asideShop mainShop"
+	"footerShop footerShop";
+}
+
+//aside
+.aside{
+	width: 100%;
+	padding-top: 130px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	.asideForm{
+		width: 75%;
+		display: flex;
+		flex-direction: column;
+		form{
+			font-size: 1.7rem;
+			b{
+				width: 100%;
+				font-size: 2rem;
+			}
+			.form-check .form-check-input{
+			    background-color: $lightBeige;
+			    border-color: $darkBrown;
+			}
+		}
+	}
+}
+
+//main_shoes
+.containerShop{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-evenly;
+	.shoes{
+		width: 30%;
+		margin: 0 10px 100px 10px;
+		transform: scale(1.0);
+		transition: transform 0.8s;
+		&:hover{
+			transform: scale(1.05);
+			transition: transform 0.8s;
+		}
+		a .imgShoes{
+			display: block;
+			width: 100%;
+			border-top-right-radius: 15px;
+			border-top-left-radius: 15px;
+		}
+	}
+}
+//main_t-shirts
+.containerTshirt{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-around;
+	.tshirt{
+		width: 30%;
+		margin: 0 10px 100px 10px;
+		transform: scale(1.0);
+		transition: transform 0.8s;
+		&:hover{
+			transform: scale(1.05);
+			transition: transform 0.8s;
+		}
+		a .imgTshirt{
+			display: block;
+			width: 100%;
+			border-top-right-radius: 15px;
+			border-top-left-radius: 15px;
+		}
+	}
+}
+.backgroundText{
+	background: $darkBrown;
+	padding: 10px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	.titleCard{
+		font-size: 2.3rem;
+		font-weight: $regular;
+		color: $lightBeige;
+	}
+	.subtitle{
+		font-size: 1.7rem;
+		font-weight: $regular;
+		color: $beige;
+	}
+	.price{
+		padding-top: 10px;
+		font-size: 2rem;
+		font-weight: $regular;
+		color: $lightBeige;
+	}
+}

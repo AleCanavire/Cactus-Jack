@@ -1,0 +1,572 @@
+//breakpoints
+
+//media queries nav
+@media (max-width: 1200px){
+	.container-fluid{
+		.navbar-collapse{
+			.list{
+				width: 50%;
+			}
+		}
+	}
+}
+@media (max-width: 992px){
+	.container-fluid{
+		.navbar-toggler{
+	    	border: none;
+			.navbar-toggler-icon{
+			    width: 3.2em;
+			    height: 3.2em;
+			    background-image: url(../img/burger-toggle.png);
+			}	    
+		}
+		.navbar-collapse{
+			.list{
+				margin-top: 10px;
+				flex-direction: column;
+				li a{
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 992px){
+	.navbar-expand-lg .navbar-collapse {
+    	justify-content: flex-end;
+	}
+}
+
+//media queries footer
+@media (max-width: 1024px){
+	footer{
+		.sizeFooter{
+			width: 90%;
+		}
+	}
+	
+}
+
+@media (max-width: 768px){
+	footer{
+		.sizeFooter{
+			width: 95%;
+		}
+	}
+}
+
+@media (max-width: 600px){
+	footer{
+		.sizeFooter{
+			.cactusFooter{
+				height: 45px;
+				a .cactuslogo{
+					height: 45px;
+				}
+			}
+			.newsletter{
+				width: 100%;
+			}
+			.socialNetworks{
+				width: 100%;
+				a .social{
+					width: 25px;
+					height: 25px;
+				}
+			}
+		}
+	}		
+}
+
+@media (max-width: 480px){
+	footer{
+		.sizeFooter{
+			.cactusFooter{
+				height: 45px;
+				a .cactuslogo{
+					height: 45px;
+				}
+			}
+			.newsletter{
+				width: 100%;
+			}
+			.socialNetworks{
+				justify-content: space-evenly;
+				a{
+					margin: 0;
+				}
+			}			
+		}
+	}	
+}
+
+//media queries home
+@media (max-width: 1200px){
+	#imgHome{
+		width: 100%;
+		height: 100vh;
+		background-image: url(../img/CactusJackImagenHero.jpeg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		display: flex;
+		justify-content: center;
+	}	
+	.bgHome{
+		height: auto;
+		flex-wrap: wrap;
+		padding: 0;
+		background-image: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		#mainHome{
+			width: 80%;
+			margin-bottom: 20px;
+			.div-btn{
+				.btn-history{
+					width: 100%;
+				}
+			}
+			.offcanvas{
+				.offcanvas-body{
+				    padding: 0;
+				    .containerText{
+						justify-content: center;
+						width: 100%;
+						div{
+							.textHistory{
+								text-align: center;
+							}
+						}
+					}
+				}
+			}
+			.offcanvas.offcanvas-start{
+				padding: 25px;
+				width: 100%;
+			}
+		}
+		.tour{
+			width: 80%;
+			height: auto;
+			margin-bottom: 50px;
+		}
+	}	
+}
+
+@media (max-width: 1024px){
+	.bgHome{
+		#mainHome{
+			width: 90%;
+		}
+		.tour{
+			width: 90%;
+		}
+	}
+}
+
+@media (max-width: 768px){
+	.bgHome{
+		#mainHome{
+			width: 95%;
+		}
+		.tour{
+			width: 95%;
+			div{
+				font-size: 1.1rem;
+			}			
+		}
+	}	
+}
+
+@media (max-width: 600px){
+	.bgHome{
+		#mainHome{
+			.offcanvas{
+				.offcanvas-body{
+					.containerText{
+						div .textHistory{
+							font-size: 1.5rem;
+						}
+					}
+				}
+			}
+		}
+		.tour{
+			div{
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 480px){
+	.bgHome{
+		#mainHome{
+			.offcanvas{
+				.offcanvas-body{
+					.containerText{
+						div .textHistory{
+							font-size: 1.1rem;
+						}
+					}
+				}
+			}
+		}
+		.tour{
+			div{
+				font-size: 0.9rem;
+			}
+		}
+	}
+}
+
+//media queries shop
+@media (max-width: 1200px){
+	.asideForm{
+		width: 80%;
+		form{
+			font-size: 1.5rem;
+			b{
+				width: 100%;
+				font-size: 1.7rem;
+			}
+			.form-check{
+				float: none;
+			    margin-left: 0;
+			}
+		}
+	}
+	.containerShop{
+		.shoes{
+			width: 45%;
+			margin: 0 0 100px 0;
+		}
+	}
+	.containerTshirt{
+		.tshirt{
+			width: 45%;
+			margin: 0 0 100px 0;
+		}
+	}
+}
+
+@media (max-width: 1024px){
+	.contenedorShop{
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+		"navShop"
+		"headerShop"
+		"asideShop"
+		"mainShop"
+		"footerShop";
+	}
+	.aside{
+		width: 100%;
+		padding-top: 50px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		.asideForm{
+			width: 90%;
+			flex-direction: row;
+			justify-content: space-evenly;
+			form{
+				font-size: 1.7rem;
+				b{
+					font-size: 2rem;
+				}
+			}
+		}
+	}			
+}
+
+@media (max-width: 600px){
+	.aside{
+		.asideForm{
+			justify-content: space-between;
+			form{
+				font-size: 1.5rem;
+				b{
+					width: 100%;
+					font-size: 1.7rem;
+				}
+			}
+		}		
+	}
+	.containerShop{
+		.shoes{
+			width: 90%;
+		}
+	}
+	.containerTshirt{
+		.tshirt{
+			width: 90%;
+		}
+	}
+}
+
+@media (max-width: 480px){
+	.aside{
+		.asideForm form{
+			font-size: 1.2rem;
+			b{
+				width: 100%;
+				font-size: 1.5rem;
+			}
+		}		
+	}
+	
+}
+
+//media queries music
+@media (max-width: 1200px){
+	.container-albums{
+		.album{
+			width: 45%;
+		}
+	}
+}
+
+@media(max-width: 768px){
+	.container-albums{
+		.album{
+			width: 85%;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@media(max-width: 600px){
+	.container-albums{
+		.album{
+			.accordion{
+				.accordion-item{
+					h2{
+						.accordion-collapse div{
+							.table{
+								font-size: 1.3rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.title{
+		font-size: 2.6rem;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}	
+	
+}
+
+@media(max-width: 480px){
+	.container-albums{
+		.album{
+			.accordion{
+				.accordion-item{
+					h2{
+						.accordion-collapse div{
+							.table{
+								font-size: 1.2rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.title{
+		font-size: 2.2rem;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}	
+}
+
+//media queries news
+@media (max-width: 1200px){
+	.containerNews{
+		.newsCard{
+			width: 30%;
+			margin-bottom: 50px;
+			flex-wrap: wrap;
+			div{
+				width: 100%;
+				.imgNews{
+					width: 100%;
+					margin-bottom: 10px;
+				}
+			}
+			.textCard{
+				padding-left: 0;
+				.textNews{
+					display: none;
+				}
+				.button{
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px){
+	.containerNews{
+		.newsCard{
+			width: 45%;
+		}
+	}
+}
+
+@media (max-width: 480px){
+	.containerNews{
+		.newsCard{
+			width: 90%;
+		}
+	}
+}
+
+//media queries contact
+@media (max-width: 1200px){
+	.contenedorContact{
+		grid-template-columns: 1fr;
+		grid-template-areas:
+		"mainContact"
+		"asideContact";
+	}
+	.bgMain{
+		#asideContact{
+			display: flex;
+			justify-content: center;
+			.twitter{
+				display: none;
+			}
+			.youtube{
+				width: 40%;
+				margin-top: 100px;
+				article{
+					width: 100%;
+				}
+			}
+		}
+		#mainContact{
+			.containerContact{
+				padding-left: 0;
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				.titleContact{
+					width: 100%;
+					text-align: center;
+				}
+				form{
+					background-color: rgba(200,189,188,255);
+					width: 40%;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					div{
+						width: 100%;
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: center;
+						text-align: center;
+						label,
+						textarea{
+							width: 100%;
+						}
+					}
+					.form-check{
+						padding-left: 0;
+					}
+					.form-switch .form-check-input {
+					    margin-left: 0;
+					}
+					.mx-3{
+						margin-left: 1rem !important;
+						margin-right: 1rem !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px){
+	.bgMain{
+		padding-top: 50px;
+		#asideContact{
+			.youtube{
+				width: 60%;
+			}
+		}
+		#mainContact{
+			.containerContact{
+				.titleContact{
+					font-size: 2.5rem;
+				}
+				form{
+					width: 60%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px){
+	.bgMain{
+		#asideContact{
+			.youtube{
+				width: 80%;
+			}	
+		}
+		#mainContact{
+			.containerContact{
+				form{
+					width: 80%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 600px){
+	.bgMain{
+		padding-top: 20px;
+		#asideContact{
+			.youtube{
+				width: 90%;
+				article a{
+					font-size: 1rem;
+				}
+			}
+		}
+		#mainContact{
+			.containerContact{
+				.titleContact{
+					font-size: 2.5rem;
+				}
+				form{
+					width: 90%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 480px){
+	.bgMain{
+		#mainContact{
+			.containerContact{
+				form{
+					width: 90%;
+				}
+			}
+		}
+	}
+}
