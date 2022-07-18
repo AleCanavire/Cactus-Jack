@@ -51,13 +51,36 @@ footer{
 			height: 25px;
 			@include flex(nowrap, center, normal);
 			margin-top: 10px;
-			a{
+			div{
+				position: relative;
+				width: 25px;
+				height: 25px;
 				margin-left: 25px;
 				margin-right: 25px;
-				.social{
-					height: 25px;
+				a{
+					.social{
+						width: 100%;
+						height: 100%;
+					}
+					.facebookIcon,
+					.twitterIcon,
+					.youtubeIcon,
+					.instagramIcon{
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						opacity: 0;
+						border-radius: 50%;
+						transition: all .4s ease-in-out;
+						&:hover{
+							opacity: 1;
+							box-shadow: 0px 0px 10px 2px #f4eeeb;
+						}
+					}
 				}
-			}
+			}	
 		}
 		.footertext{
 			width: 100%;

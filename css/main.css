@@ -597,11 +597,33 @@ footer {
       justify-content: center;
       align-items: normal;
       margin-top: 10px; }
-      footer .sizeFooter .socialNetworks a {
+      footer .sizeFooter .socialNetworks div {
+        position: relative;
+        width: 25px;
+        height: 25px;
         margin-left: 25px;
         margin-right: 25px; }
-        footer .sizeFooter .socialNetworks a .social {
-          height: 25px; }
+        footer .sizeFooter .socialNetworks div a .social {
+          width: 100%;
+          height: 100%; }
+        footer .sizeFooter .socialNetworks div a .facebookIcon,
+        footer .sizeFooter .socialNetworks div a .twitterIcon,
+        footer .sizeFooter .socialNetworks div a .youtubeIcon,
+        footer .sizeFooter .socialNetworks div a .instagramIcon {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          border-radius: 50%;
+          transition: all .4s ease-in-out; }
+          footer .sizeFooter .socialNetworks div a .facebookIcon:hover,
+          footer .sizeFooter .socialNetworks div a .twitterIcon:hover,
+          footer .sizeFooter .socialNetworks div a .youtubeIcon:hover,
+          footer .sizeFooter .socialNetworks div a .instagramIcon:hover {
+            opacity: 1;
+            box-shadow: 0px 0px 10px 2px #f4eeeb; }
     footer .sizeFooter .footertext {
       width: 100%;
       color: #e2dad8;
