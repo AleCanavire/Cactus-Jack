@@ -6,9 +6,8 @@ header{
 }
 
 .title{
-	color: $darkBrown;
-	font-size: 3rem;
-	font-weight: $bold;
+	color: map-get($map:$paleta, $key:'darkBrown');
+	@include texto(3rem, $bold);
 	text-align: center;
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -65,14 +64,11 @@ header{
 	width: 100%;
 	height: 100vh;
 	padding: 100px 30px;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
+	@include flex(nowrap, space-between, flex-start);
 	#mainHome{
 		.div-btn{
 			height: 100%;
-			display: flex;
-			align-items: center;
+			@include flex(nowrap, space-between, center);
 			.btn{
 				&:hover {
 			   		background-color:rgba(0, 0, 0, .15);
@@ -92,30 +88,26 @@ header{
 			padding-left:35px;
 			justify-content: center;
 			.offcanvas-header{
-				display: flex;
-				justify-content: flex-end;
+				@include flex(nowrap, flex-end, normal);
 				.btn-close{
 					background-color: #FFFFFF;
 				}
 			}
 			.offcanvas-body{
-			    display: flex;
-			    align-items: center;
+				@include flex(nowrap, normal, center);
 			    flex-grow: 0;
 			    .containerText{
-					display: flex;
-					flex-wrap: wrap;
+			    	@include flex(wrap, normal, normal);
 					h1{
 						color: #FFFFFF;
-						font-size: 2.6rem;
-						font-weight: $bold;
+						@include texto(2.6rem, $bold);
 						letter-spacing: 1.2rem;
 					}
 					div{
 						.textHistory{
 							color: #FFFFFF;
 							width: 100%;
-							font-size: 1.7rem;
+							@include texto(1.7rem, $regular);
 							text-align: left;
 						}
 					}
@@ -124,28 +116,28 @@ header{
 		}
 	}
 	.tour{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
+		@include flex(wrap, center, normal);
 		width: 35%;
 		h2{
 			width: 100%;
 			text-align: center;
-			font-size: 2.5rem;
-			font-weight: $bold;
+			@include texto(2.5rem, $bold);
 		}
 		div{
-			display: flex;
-			flex-wrap: wrap;
+			@include flex(wrap, normal, normal);
 			width: 100%;
 			height: auto;
 			padding: 10px;
 			margin-bottom: 5px;
-			background: $darkBrown;
-			color: $lightBeige;
-			font-size: 1.2rem;
+			background: map-get($map:$paleta, $key:'darkBrown');
+			color: map-get($map:$paleta, $key:'lightBeige');
+			@include texto(1.2rem, $regular);
+			transition: background-color .5s ease-out;
+			&:hover{
+				background-color: map-get($map:$paleta, $key:'brown');
+			}
 			a{
-				color: $lightBeige;
+				color: map-get($map:$paleta, $key:'lightBeige');
 				text-decoration-line: none;
 			}
 			.date{
@@ -180,6 +172,10 @@ header{
 	background-color:rgba(0, 0, 0, .6);
 	opacity: 1;
 	backdrop-filter: blur(3rem);
+}
+
+.fade {
+    transition: opacity .35s linear;
 }
 
 .homeFooter{

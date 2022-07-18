@@ -36,34 +36,65 @@ body {
           top: 0;
           left: 0;
           opacity: 0;
-          transition: opacity .5s ease-in-out; }
+          transition: opacity .3s ease-in-out; }
           .navbar .container-fluid .logo-div a .logo-front:hover {
             opacity: 1; }
     .navbar .container-fluid .list {
       width: 40%;
       display: flex;
-      flex-direction: row;
-      justify-content: space-between; }
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: normal;
+      flex-direction: row; }
     .navbar .container-fluid ul {
       font-family: 'Courier Prime', monospace;
       list-style: none;
       display: flex;
+      flex-wrap: nowrap;
       justify-content: space-between;
+      align-items: normal;
       margin-bottom: 0;
       padding-left: 0; }
       .navbar .container-fluid ul li {
         transform: scale(1);
-        transition: transform .5s; }
+        transition: 1s ease-out; }
         .navbar .container-fluid ul li:hover {
           transform: scale(1.05);
-          transition: transform .5s; }
+          transition: 1s ease-out; }
         .navbar .container-fluid ul li a {
           color: #5A5453;
           text-decoration: none;
-          font-size: 2.2rem; }
+          font-size: 2.2rem;
+          font-weight: 500; }
           .navbar .container-fluid ul li a:hover {
             color: #363433;
+            font-size: 2.2rem;
             font-weight: 600; }
+        .navbar .container-fluid ul li #home {
+          color: #363433;
+          text-decoration: none;
+          font-size: 2.2rem;
+          font-weight: 600; }
+        .navbar .container-fluid ul li #shop {
+          color: #363433;
+          text-decoration: none;
+          font-size: 2.2rem;
+          font-weight: 600; }
+        .navbar .container-fluid ul li #music {
+          color: #363433;
+          text-decoration: none;
+          font-size: 2.2rem;
+          font-weight: 600; }
+        .navbar .container-fluid ul li #news {
+          color: #363433;
+          text-decoration: none;
+          font-size: 2.2rem;
+          font-weight: 600; }
+        .navbar .container-fluid ul li #contact {
+          color: #363433;
+          text-decoration: none;
+          font-size: 2.2rem;
+          font-weight: 600; }
 
 header {
   line-height: 0; }
@@ -121,11 +152,14 @@ header {
   height: 100vh;
   padding: 100px 30px;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-start; }
   .bgHome #mainHome .div-btn {
     height: 100%;
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: center; }
     .bgHome #mainHome .div-btn .btn:hover {
       background-color: rgba(0, 0, 0, 0.15); }
@@ -141,16 +175,22 @@ header {
     justify-content: center; }
     .bgHome #mainHome .offcanvas .offcanvas-header {
       display: flex;
-      justify-content: flex-end; }
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      align-items: normal; }
       .bgHome #mainHome .offcanvas .offcanvas-header .btn-close {
         background-color: #FFFFFF; }
     .bgHome #mainHome .offcanvas .offcanvas-body {
       display: flex;
+      flex-wrap: nowrap;
+      justify-content: normal;
       align-items: center;
       flex-grow: 0; }
       .bgHome #mainHome .offcanvas .offcanvas-body .containerText {
         display: flex;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+        justify-content: normal;
+        align-items: normal; }
         .bgHome #mainHome .offcanvas .offcanvas-body .containerText h1 {
           color: #FFFFFF;
           font-size: 2.6rem;
@@ -160,11 +200,13 @@ header {
           color: #FFFFFF;
           width: 100%;
           font-size: 1.7rem;
+          font-weight: 500;
           text-align: left; }
   .bgHome .tour {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: normal;
     width: 35%; }
     .bgHome .tour h2 {
       width: 100%;
@@ -174,13 +216,19 @@ header {
     .bgHome .tour div {
       display: flex;
       flex-wrap: wrap;
+      justify-content: normal;
+      align-items: normal;
       width: 100%;
       height: auto;
       padding: 10px;
       margin-bottom: 5px;
       background: #363433;
       color: #e2dad8;
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      font-weight: 500;
+      transition: background-color .5s ease-out; }
+      .bgHome .tour div:hover {
+        background-color: #4D4947; }
       .bgHome .tour div a {
         color: #e2dad8;
         text-decoration-line: none; }
@@ -209,6 +257,9 @@ header {
   opacity: 1;
   backdrop-filter: blur(3rem); }
 
+.fade {
+  transition: opacity .35s linear; }
+
 .homeFooter {
   position: relative; }
 
@@ -223,57 +274,44 @@ header {
   padding-top: 130px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  align-items: normal; }
   .aside .asideForm {
     width: 75%;
     display: flex;
     flex-direction: column; }
     .aside .asideForm form {
-      font-size: 1.7rem; }
+      font-size: 1.7rem;
+      font-weight: 500; }
       .aside .asideForm form b {
         width: 100%;
-        font-size: 2rem; }
+        font-size: 2rem;
+        font-weight: 600; }
       .aside .asideForm form .form-check .form-check-input {
         background-color: #4D4947;
         border-color: #363433; }
 
-.containerShop {
+.containerShop, .containerTshirt {
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-evenly; }
-  .containerShop .shoes {
+  justify-content: space-evenly;
+  align-items: normal; }
+  .containerShop .shoes, .containerTshirt .shoes, .containerTshirt .tshirt {
     width: 30%;
-    margin: 0 10px 100px 10px;
+    margin: 0 10px 50px 10px;
     transform: scale(1);
     transition: transform 0.8s; }
-    .containerShop .shoes:hover {
-      transform: scale(1.05);
+    .containerShop .shoes:hover, .containerTshirt .shoes:hover, .containerTshirt .tshirt:hover {
+      transform: scale(1.02);
       transition: transform 0.8s; }
-    .containerShop .shoes a .imgShoes {
+    .containerShop .shoes a .imgShoes, .containerTshirt .shoes a .imgShoes, .containerTshirt .tshirt a .imgShoes, .containerTshirt .tshirt a .imgTshirt {
       display: block;
       width: 100%;
       border-top-right-radius: 15px;
       border-top-left-radius: 15px; }
 
-.containerTshirt {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-around; }
-  .containerTshirt .tshirt {
-    width: 30%;
-    margin: 0 10px 100px 10px;
-    transform: scale(1);
-    transition: transform 0.8s; }
-    .containerTshirt .tshirt:hover {
-      transform: scale(1.05);
-      transition: transform 0.8s; }
-    .containerTshirt .tshirt a .imgTshirt {
-      display: block;
-      width: 100%;
-      border-top-right-radius: 15px;
-      border-top-left-radius: 15px; }
+.containerTshirt .tshirt {
+  margin: 0 10px 100px 10px; }
 
 .backgroundText {
   background: #363433;
@@ -298,20 +336,21 @@ header {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  align-items: normal; }
   .container-albums .album {
     width: 30%;
     height: auto;
+    overflow: hidden;
     margin-bottom: 70px; }
     .container-albums .album a .imgAlbum {
       width: 100%;
-      border-radius: 10px;
       margin-bottom: 15px;
+      object-fit: cover;
       transform: scale(1);
       transition: transform 1s; }
       .container-albums .album a .imgAlbum:hover {
-        transform: scale(1.05);
+        transform: scale(1.04);
         transition: transform 1s; }
     .container-albums .album .accordion {
       --bs-accordion-border-color: none !important; }
@@ -334,14 +373,15 @@ header {
         color: #363433;
         border-color: #363433;
         font-size: 1.5rem;
+        font-weight: 500;
         text-align: left;
         margin: 0; }
 
 .containerNews {
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  align-items: normal; }
   .containerNews .newsCard {
     width: 45%;
     margin-bottom: 50px;
@@ -363,8 +403,8 @@ header {
         font-weight: 600; }
       .containerNews .newsCard .textCard .textNews {
         background-color: #e2dad8;
-        font-weight: 500;
         font-size: 1.4rem;
+        font-weight: 500;
         text-align: justify; }
       .containerNews .newsCard .textCard a .button {
         padding: 3px 5px;
@@ -373,7 +413,11 @@ header {
         background: #363433;
         color: #e2dad8;
         font-size: 1.3rem;
-        cursor: pointer; }
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color .3s ease-out; }
+        .containerNews .newsCard .textCard a .button:hover {
+          background: #4D4947; }
 
 .contenedorContact {
   display: grid;
@@ -393,7 +437,8 @@ header {
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    align-items: normal; }
     .bgMain #asideContact .twitter article {
       width: 90%; }
       .bgMain #asideContact .twitter article h2 {
@@ -411,7 +456,8 @@ header {
     margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    align-items: normal; }
     .bgMain #asideContact .youtube article {
       width: 90%;
       height: auto; }
@@ -430,20 +476,40 @@ header {
         text-align: center;
         background: #363433;
         border-radius: 5px;
-        margin-bottom: 3px; }
+        margin-bottom: 3px;
+        transition: background .5s ease-out; }
+        .bgMain #asideContact .youtube article div:hover {
+          background: #4D4947; }
         .bgMain #asideContact .youtube article div a {
           text-decoration-line: none;
           font-size: 1.2rem;
+          font-weight: 500;
           color: #e2dad8; }
   .bgMain #mainContact .containerContact {
     padding-left: 30px;
     width: 63%; }
     .bgMain #mainContact .containerContact .titleContact {
       font-size: 3rem;
-      font-weight: 600; }
+      font-weight: 600;
+      color: #363433; }
+
+.form-control {
+  background-color: #D8CCC9;
+  border: #D8CCC9; }
+  .form-control:focus {
+    background-color: #e2dad8;
+    border: #e2dad8;
+    box-shadow: rgba(77, 73, 71, 0.25); }
+
+.form-select {
+  background-color: #D8CCC9;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 500; }
 
 .textContact {
   font-size: 1.8rem;
+  font-weight: 500;
   border-bottom-color: #363433;
   line-height: 2rem; }
 
@@ -474,17 +540,21 @@ footer {
   bottom: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  align-items: normal; }
   footer .sizeFooter {
     width: 70%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-wrap: wrap; }
+    align-items: normal; }
     footer .sizeFooter .cactusFooter {
       width: 100%;
       height: 50px;
       display: flex;
+      flex-wrap: nowrap;
       justify-content: center;
+      align-items: normal;
       margin-top: 10px; }
       footer .sizeFooter .cactusFooter a .cactuslogo {
         height: 50px;
@@ -492,15 +562,19 @@ footer {
     footer .sizeFooter .newsletter {
       width: 50%;
       font-size: 1.2rem;
+      font-weight: 500;
       color: #e2dad8;
       text-align: center;
       line-height: 2.5rem;
       display: flex;
-      flex-direction: column;
+      flex-wrap: nowrap;
       justify-content: center;
+      align-items: normal;
+      flex-direction: column;
       margin-top: 10px; }
       footer .sizeFooter .newsletter input {
         font-size: 1.4rem;
+        font-weight: 500;
         text-align: center;
         color: #e2dad8;
         background-color: transparent;
@@ -513,12 +587,15 @@ footer {
         background: transparent;
         color: #e2dad8;
         font-size: 1.2rem;
+        font-weight: 500;
         border: none; }
     footer .sizeFooter .socialNetworks {
       width: 100%;
       height: 25px;
       display: flex;
+      flex-wrap: nowrap;
       justify-content: center;
+      align-items: normal;
       margin-top: 10px; }
       footer .sizeFooter .socialNetworks a {
         margin-left: 25px;
@@ -530,6 +607,7 @@ footer {
       color: #e2dad8;
       text-align: center;
       font-size: 1rem;
+      font-weight: 500;
       margin-top: 10px;
       margin-bottom: 10px; }
 
@@ -547,12 +625,55 @@ footer {
   .container-fluid .navbar-collapse .list {
     margin-top: 10px;
     flex-direction: column; }
-    .container-fluid .navbar-collapse .list li a {
-      font-size: 1.8rem; } }
+    .container-fluid .navbar-collapse .list li {
+      transform: none; }
+      .container-fluid .navbar-collapse .list li:hover {
+        transform: none; }
+      .container-fluid .navbar-collapse .list li a {
+        font-size: 1.8rem !important; }
+      .container-fluid .navbar-collapse .list li #home {
+        color: #363433;
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-weight: 600; }
+      .container-fluid .navbar-collapse .list li #shop {
+        color: #363433;
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-weight: 600; }
+      .container-fluid .navbar-collapse .list li #music {
+        color: #363433;
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-weight: 600; }
+      .container-fluid .navbar-collapse .list li #news {
+        color: #363433;
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-weight: 600; }
+      .container-fluid .navbar-collapse .list li #contact {
+        color: #363433;
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-weight: 600; } }
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end; } }
+
+@media (max-width: 600px) {
+  .container-fluid .logo-div {
+    width: 50px !important;
+    height: 45px !important; }
+    .container-fluid .logo-div a {
+      width: 50px !important;
+      height: 45px !important; }
+      .container-fluid .logo-div a .logo-back {
+        width: 50px !important;
+        height: 45px !important; }
+      .container-fluid .logo-div a .logo-front {
+        width: 50px !important;
+        height: 45px !important; } }
 
 @media (max-width: 1024px) {
   footer .sizeFooter {
@@ -604,7 +725,8 @@ footer {
     background-image: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    align-items: normal; }
     .bgHome #mainHome {
       width: 80%;
       margin-bottom: 20px; }
@@ -662,12 +784,12 @@ footer {
       .asideForm form .form-check {
         float: none;
         margin-left: 0; }
-  .containerShop .shoes {
+  .containerShop .shoes, .containerTshirt .shoes, .containerTshirt .tshirt {
     width: 45%;
-    margin: 0 0 100px 0; }
+    margin: 0 0 50px 0; }
   .containerTshirt .tshirt {
     width: 45%;
-    margin: 0 0 100px 0; } }
+    margin: 0 0 50px 0; } }
 
 @media (max-width: 1024px) {
   .contenedorShop {
@@ -679,7 +801,8 @@ footer {
     padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    align-items: normal; }
     .aside .asideForm {
       width: 90%;
       flex-direction: row;
@@ -697,7 +820,7 @@ footer {
       .aside .asideForm form b {
         width: 100%;
         font-size: 1.7rem; }
-  .containerShop .shoes {
+  .containerShop .shoes, .containerTshirt .shoes, .containerTshirt .tshirt {
     width: 90%; }
   .containerTshirt .tshirt {
     width: 90%; } }
@@ -778,7 +901,8 @@ footer {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    align-items: normal; }
     .bgMain #mainContact .containerContact .titleContact {
       width: 100%;
       text-align: center; }
@@ -787,12 +911,14 @@ footer {
       width: 40%;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center; }
+      justify-content: center;
+      align-items: normal; }
       .bgMain #mainContact .containerContact form div {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: normal;
         text-align: center; }
         .bgMain #mainContact .containerContact form div label,
         .bgMain #mainContact .containerContact form div textarea {

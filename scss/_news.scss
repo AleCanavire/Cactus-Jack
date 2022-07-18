@@ -1,9 +1,6 @@
 //news
 .containerNews{
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	justify-content: space-evenly;
+	@include flex(wrap, space-evenly, normal);
 	.newsCard{
 		width: 45%;
 		margin-bottom: 50px;
@@ -18,29 +15,30 @@
 			display: block;
 			padding-left: 25px;
 			.dateText{
-				background-color: $lightBeige;
-				font-size: 1.2rem;
-				font-weight: $regular;
+				background-color: map-get($map:$paleta, $key:'lightBeige');
+				@include texto(1.2rem, $regular);
 			}
 			.titleCardNews{
-				background-color: $lightBeige;
-				font-size: 1.6rem;
-				font-weight: $bold;
+				background-color: map-get($map:$paleta, $key:'lightBeige');
+				@include texto(1.6rem, $bold);
 			}
 			.textNews{
-				background-color: $lightBeige;
-				font-weight: $regular;
-				font-size: 1.4rem;
+				background-color: map-get($map:$paleta, $key:'lightBeige');
+				@include texto(1.4rem, $regular);
 				text-align: justify;
 			}
 			a .button{
 				padding: 3px 5px;
 				border: none;
 				border-radius: 3px;
-				background: $darkBrown;
-				color: $lightBeige;
-				font-size: 1.3rem;
+				background: map-get($map:$paleta, $key:'darkBrown');
+				color: map-get($map:$paleta, $key:'lightBeige');
+				@include texto(1.3rem, $regular);
 				cursor: pointer;
+				transition: background-color .3s ease-out;
+				&:hover{
+					background: map-get($map:$paleta, $key:'brown')
+				}
 			}
 		}
 	}

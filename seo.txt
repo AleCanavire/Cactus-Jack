@@ -1,0 +1,38 @@
+Cambio SEO
+
+-- Home --
+Author: Alexander Canavire
+description: 
+Cactus Jack is the official website of Travis Scott.
+Tour of Travis Scott • Shop Cactus Jack products • Travis Scott Albums • All the latest news
+
+keywords:
+Cactus Jack, History Cactus Jack, Travis Scott, Travis Scott TOUR
+
+-- Shop --
+description:
+The official shop of Travis Scott and all the merchandising of Cactus Jack.
+
+keywords:
+Cactus Jack, Travis Scott, Travis Scott shop, Nike Travis Scott, Nike SB Travis Scott, Jordan Travis Scott
+
+-- Music --
+description:
+All Travis Scott albums and the complete list of his songs.
+
+keywords:
+Cactus Jack, Travis Scott, Travis Scott Albums, JACKBOYS, ASTROWORLD, BIRDS IN THE TRAP SING MCKNIGHT, RODEO, DAYS BEFORE RODEO, OWL PHARAOH
+
+-- News --
+description:
+All the latest news of Travis Scott and his Cactus Jack brand
+
+keywords:
+Cactus Jack, Travis Scott, Travis Scott News
+
+-- Contact --
+description:
+Contact of Travis Scott and the latest news from Cactus Jack in your email
+
+keywords:
+Cactus Jack, Travis Scott, Travis Scott Contact

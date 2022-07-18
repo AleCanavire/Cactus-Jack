@@ -17,18 +17,15 @@
 		.twitter{
 			width: 100%;
 			height: auto;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
+			@include flex(wrap, center, normal);
 			article{
 				width: 90%;
 				h2{
 					text-align: center;
-					font-size: 2rem;
-					font-weight: $regular;
+					@include texto(2rem, $regular);
 					padding: 5px;
-					background: $brown;
-					color: $lightBeige;
+					background: map-get($map:$paleta, $key:'brown');
+					color: map-get($map:$paleta, $key:'lightBeige');
 					border-radius: 5px;
 					margin-bottom: 5px;
 				}
@@ -38,19 +35,16 @@
 			width: 100%;
 			margin-top: 15px;
 			margin-bottom: 100px;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
+			@include flex(wrap, center, normal);
 			article{
 				width: 90%;
 				height: auto;
 				h2{
 					text-align: center;
-					font-size: 2rem;
-					font-weight: $regular;
+					@include texto(2rem, $regular);
 					padding: 5px;
-					background: $brown;
-					color: $lightBeige;
+					background: map-get($map:$paleta, $key:'brown');
+					color: map-get($map:$paleta, $key:'lightBeige');
 					border-radius: 5px;
 					margin-bottom: 5px;
 				}
@@ -58,13 +52,17 @@
 					padding: 8px 0;
 					width: 100%;
 					text-align: center;
-					background: $darkBrown;
+					background: map-get($map:$paleta, $key:'darkBrown');
 					border-radius: 5px;
 					margin-bottom: 3px;
+					transition: background .5s ease-out;
+					&:hover{
+						background: map-get($map:$paleta, $key:'brown')
+					}
 					a{
 						text-decoration-line: none;
-						font-size: 1.2rem;
-						color: $lightBeige;
+						@include texto(1.2rem, $regular);
+						color: map-get($map:$paleta, $key:'lightBeige');
 					}
 				}
 			}
@@ -75,30 +73,45 @@
 			padding-left: 30px;
 			width: 63%;
 			.titleContact{
-				font-size: 3rem;
-				font-weight: $bold;
+				@include texto(3rem, $bold);
+				color: map-get($map:$paleta, $key:'darkBrown');
 			}
 		}
 	}	
 }
+.form-control{
+	background-color: map-get($map:$paleta, $key:'beige');
+	border: map-get($map:$paleta, $key:'beige');
+	&:focus{
+		background-color: map-get($map:$paleta, $key:'lightBeige');
+		border: map-get($map:$paleta, $key:'lightBeige');
+		box-shadow: rgba(77, 73, 71, .25);
+	}
+}
+.form-select{
+	background-color: map-get($map:$paleta, $key:'beige');
+	border: none;
+	@include texto(1.2rem, $regular);
+}
+
 .textContact{
-	font-size: 1.8rem;
-	border-bottom-color: $darkBrown;
+	@include texto(1.8rem, $regular);
+	border-bottom-color: map-get($map:$paleta, $key:'darkBrown');
 	line-height: 2rem;
 }
 .btn-brown{
-	background: $lightBeige;
-	color: $darkBrown;
+	background: map-get($map:$paleta, $key:'lightBeige');
+	color: map-get($map:$paleta, $key:'darkBrown');
 }
 .form-check-input{
-    background-color: $lightBeige;
-    border-color: $lightBeige;
+    background-color: map-get($map:$paleta, $key:'lightBeige');
+    border-color: map-get($map:$paleta, $key:'lightBeige');
     &:checked {
-	    background-color: $brown;
-	    border-color: $brown;
+	    background-color: map-get($map:$paleta, $key:'brown');
+	    border-color: map-get($map:$paleta, $key:'brown');
 	}
 	&:focus {
-	    border-color: $brown;
+	    border-color: map-get($map:$paleta, $key:'brown');
 	    box-shadow: none;
 	}
 }

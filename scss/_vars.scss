@@ -1,10 +1,31 @@
-//colors
-$darkBrown:#363433;
-$brown:#4D4947;
-$lightBrown:#5A5453;
-$beige:#D8CCC9;
-$lightBeige:#e2dad8;
-
 //font-weight
 $bold:600;
 $regular:500;
+
+
+
+//mixins
+@mixin flex ($wrap, $justify, $align){
+	display: flex;
+	flex-wrap: $wrap;
+	justify-content: $justify;
+	align-items: $align;
+}
+//@include flex(nowrap, space-between, normal);
+
+@mixin texto($size, $weight){
+	font-size: $size;
+	font-weight: $weight;
+}
+//@include texto(2rem, $bold);
+
+
+
+//map
+$paleta:(
+	'darkBrown': #363433,
+	'brown': #4D4947,
+	'lightBrown': #5A5453,
+	'beige': #D8CCC9,
+	'lightBeige':#e2dad8,
+);

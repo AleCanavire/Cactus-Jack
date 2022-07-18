@@ -1,7 +1,7 @@
 //nav
 .navbar{
 	padding: 10px 20px;
-	background-color: $beige;
+	background-color: map-get($map:$paleta, $key:'beige');
 	.container-fluid{
 		padding: 0;
 		.logo-div{
@@ -22,7 +22,7 @@
 					top: 0;
 					left: 0;
 					opacity: 0;
-					transition: opacity .5s ease-in-out;
+					transition: opacity .3s ease-in-out;
 					&:hover{
 						opacity: 1;
 					}
@@ -31,32 +31,55 @@
 		}
 		.list{
 			width: 40%;
-			display: flex;
+			@include flex(nowrap, space-between, normal);
 			flex-direction: row;
-			justify-content: space-between;
 		}
 		ul{
 			font-family: 'Courier Prime', monospace;
 			list-style: none;
-			display: flex;
-	    	justify-content: space-between;
+			@include flex(nowrap, space-between, normal);
 			margin-bottom: 0;
 			padding-left: 0;
 			li{
 				transform: scale(1.0);
-				transition: transform .5s;
+				transition: 1s ease-out;
 				&:hover{
 					transform: scale(1.05);
-					transition: transform .5s;
+					transition: 1s ease-out;
 				}
 				a{
-					color:$lightBrown;
+					color: map-get($map:$paleta, $key:'lightBrown');
 					text-decoration: none;
-					font-size: 2.2rem;
+					@include texto(2.2rem, $regular);
 					&:hover{
-						color:$darkBrown;
-						font-weight: $bold;
+						color: map-get($map:$paleta, $key:'darkBrown');
+						@include texto(2.2rem, $bold);
 					}
+				}
+				#home{
+					color: map-get($map:$paleta, $key:'darkBrown');
+					text-decoration: none;
+					@include texto(2.2rem, $bold);
+				}
+				#shop{
+					color: map-get($map:$paleta, $key:'darkBrown');
+					text-decoration: none;
+					@include texto(2.2rem, $bold);
+				}
+				#music{
+					color: map-get($map:$paleta, $key:'darkBrown');
+					text-decoration: none;
+					@include texto(2.2rem, $bold);
+				}
+				#news{
+					color: map-get($map:$paleta, $key:'darkBrown');
+					text-decoration: none;
+					@include texto(2.2rem, $bold);
+				}
+				#contact{
+					color: map-get($map:$paleta, $key:'darkBrown');
+					text-decoration: none;
+					@include texto(2.2rem, $bold);
 				}
 			}
 		}

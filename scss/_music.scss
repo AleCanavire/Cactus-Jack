@@ -1,22 +1,20 @@
 //music
 .container-albums{
 	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	justify-content: space-evenly;
+	@include flex(wrap, space-evenly, normal);
 	.album{
 		width: 30%;
 		height: auto;
+		overflow: hidden;
 		margin-bottom: 70px;
 		a .imgAlbum{
 			width: 100%;
-			border-radius: 10px;
 			margin-bottom: 15px;
+			object-fit: cover;
 			transform: scale(1.0);
 			transition: transform 1s;
 			&:hover{
-				transform: scale(1.05);
+				transform: scale(1.04);
 				transition: transform 1s;
 			}
 		}
@@ -25,29 +23,28 @@
 		    .accordion-item{
 		    	h2{
 			    	.accordion-button{
-						color: $lightBeige;
-						background-color: $brown;
-						font-size: 1.4rem;
-						font-weight: $bold;
+						color: map-get($map:$paleta, $key:'lightBeige');
+						background-color: map-get($map:$paleta, $key:'brown');
+						@include texto(1.4rem, $bold);
 						&:focus {
 						    z-index: 3;
-						    border-color: $darkBrown;
+						    border-color: map-get($map:$paleta, $key:'darkBrown');
 						    outline: 0;
 						    box-shadow: none !important;
 						}
 						&:not(.collapsed) {
-							color: $lightBeige;
-							background-color: $brown;
+							color: map-get($map:$paleta, $key:'lightBeige');
+							background-color: map-get($map:$paleta, $key:'brown');
 						}
 					}
 				}
 				.accordion-collapse div{
 					.table{
-						background-color: $lightBeige;
+						background-color: map-get($map:$paleta, $key:'lightBeige');
 						width: 100%;
-						color: $darkBrown;
-						border-color: $darkBrown;
-						font-size: 1.5rem;
+						color: map-get($map:$paleta, $key:'darkBrown');
+						border-color: map-get($map:$paleta, $key:'darkBrown');
+						@include texto(1.5rem, $regular);
 						text-align: left;
 						margin: 0;
 					}

@@ -3,6 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- metas SEO -->
+	<meta name="description" content="All the latest news of Travis Scott and his Cactus Jack brand">
+	<meta name="keywords" content="Cactus Jack, Travis Scott, Travis Scott News">
+	<meta name="author" content="Alexander Canavire">
+
 	<title>News | Cactus Jack</title>
 	<link rel="shortcut icon" href="../img/CactusJack-favicon.png">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -13,8 +18,8 @@
 	  <div class="container-fluid">
 	  	<div class="logo-div">
 		    <a href="../index.html">
-				<img class="logo-back" src="../img/CactusJack-Logo.png" alt="logo-nav">
-				<img class="logo-front" src="../img/CactusJack-Logo2.png" alt="logo-hover">
+				<img class="logo-back" src="../img/CactusJack-Logo.png" alt="Logo de Cactus Jack">
+				<img class="logo-front" src="../img/CactusJack-Logo2.png">
 			</a>
 		</div>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +37,7 @@
 				<a href="music.html">MUSIC</a>
 			</li>
 			<li class="nav-item">
-				<a href="news.html">NEWS</a>
+				<a href="news.html" id="news">NEWS</a>
 			</li>
 			<li class="nav-item">
 				<a href="contact.html">CONTACT</a>
@@ -51,13 +56,13 @@
 		  </div>
 		  <div class="carousel-inner">
 		    <div class="carousel-item active">
-		      <img src="../img/show1.jpg" class="d-block w-100" alt="show1">
+		      <img src="../img/show1.jpg" class="d-block w-100" alt="Foto de Travis Scott, Astroworld Festival de noviembre 2019.">
 		    </div>
 		    <div class="carousel-item">
-		      <img src="../img/show2.jpg" class="d-block w-100" alt="show2">
+		      <img src="../img/show2.jpg" class="d-block w-100" alt="Foto de Travis Scott, Astroworld Festival de noviembre 2021.">
 		    </div>
 		    <div class="carousel-item">
-		      <img src="../img/show3.jpg" class="d-block w-100" alt="show3">
+		      <img src="../img/show3.jpg" class="d-block w-100" alt="Foto escenario show de Travis Scott, Astroworld Festival de noviembre 2021.">
 		    </div>
 		  </div>
 		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -77,7 +82,9 @@
 			<section class="containerNews">
 				<article class="newsCard">
 					<div>
-						<img src="../img/cactusnews1.jpg" alt="imagen 1" class="imgNews">
+						<a href="https://hypebeast.com/2021/6/dior-travis-scott-cactus-jack-summer-2022-kim-jones-details" target="_blank">
+							<img src="../img/cactusnews1.jpg" alt="Foto de la colaboracion de Dior x Travis Scott" class="imgNews">
+						</a>
 					</div>
 					<div class="textCard">
 						<h4 class="dateText">JUN 25, 2021</h4>
@@ -91,35 +98,9 @@
 
 				<article class="newsCard">
 					<div>
-						<img src="../img/cactusnews2.jpg" alt="imagen 2" class="imgNews">
-					</div>
-					<div class="textCard">
-						<h4 class="dateText">APR 24, 2020</h4>
-						<h2 class="titleCardNews">TRAVIS SCOTT'S 'FORTNITE' ASTRONOMICAL TOUR DREW 12.3 MILLION CONCURRENT VIEWERS</h2>
-						<h3 class="textNews">Travis Scott‘s opening Astronomical Tour in Fortnite broke records and drew in the biggest live audience in the game’s history. Over 12.3 million concurrent players participated.</h3>
-						<a href="https://hypebeast.com/2020/4/travis-scott-fortnite-astronomical-12-3-million-view" target="_blank">
-						<button class="button">read more</button>
+						<a href="https://hypebeast.com/2021/6/raffle-winners-receiving-travis-scott-sony-playstation-nike-dunk-low-box-photos" target="_blank">
+							<img src="../img/cactusnews4.jpg" alt="Foto de colaboracion zapatillas Nike Dunk Low Travis Scott x Playstation" class="imgNews">
 						</a>
-					</div>
-				</article>
-
-				<article class="newsCard">
-					<div>
-						<img src="../img/cactusnews3.jpg" alt="imagen 3" class="imgNews">
-					</div>
-					<div class="textCard">
-						<h4 class="dateText">NOV 9, 2020</h4>
-						<h2 class="titleCardNews">TRAVIS SCOTT'S MCDONALD'S ACTION FIGURE IS NOW RESELLING FOR $55K USD</h2>
-						<h3 class="textNews">The super-limited Travis Scott action figures from the commercial for the McDonald’s Cactus Jack Meal collaboration are now reselling for $55,000 USD.</h3>
-						<a href="https://hypebeast.com/2020/11/travis-scott-mcdonalds-action-figure-reselling-55k-usd-cactus-jack-meal-info" target="_blank">
-						<button class="button">read more</button>
-						</a>
-					</div>
-				</article>
-
-				<article class="newsCard">
-					<div>
-						<img src="../img/cactusnews4.jpg" alt="imagen 4" class="imgNews">
 					</div>
 					<div class="textCard">
 						<h4 class="dateText">JUN 23, 2021</h4>
@@ -133,13 +114,15 @@
 
 				<article class="newsCard">
 					<div>
-						<img src="../img/cactusnews5.jpg" alt="imagen 5" class="imgNews">
+						<a href="https://hypebeast.com/2021/4/travis-scott-air-jordan-6-british-khaki-release-details" target="_blank">
+							<img src="../img/cactusnews6.jpg" alt="Foto de zapatillas Jordan 6 x Travis Scott" class="imgNews">
+						</a>
 					</div>
 					<div class="textCard">
-						<h4 class="dateText">NOV 15, 2019</h4>
-						<h2 class="titleCardNews">A CLOSER LOOK AT THE TRAVIS SCOTT X NIKE AIR FORCE 1 "CACTUS JACK"</h2>
-						<h3 class="textNews">Travis Scott and Nike‘s new Air Force 1 “Cactus Jack” is set to debut this weekend and ahead of its highly-anticipated arrival, HYPEBEAST brings you a close-up look at its patchwork styling. </h3>
-						<a href="https://hypebeast.com/2019/11/travis-scott-nike-air-force-1-cactus-jack-cn2405-900-closer-look" target="_blank">
+						<h4 class="dateText">APR 27, 2021</h4>
+						<h2 class="titleCardNews">AN OFFICIAL LOOK AT TRAVIS SCOTT'S "BRITISH KHAKI" AIR JORDAN 6 COLLABORATION</h2>
+						<h3 class="textNews">After an early look surfaced earlier this month, an official look at the Travis Scott x Air Jordan 6 “British Khaki” has now been released.</h3>
+						<a href="https://hypebeast.com/2021/4/travis-scott-air-jordan-6-british-khaki-release-details" target="_blank">
 						<button class="button">read more</button>
 						</a>
 					</div>
@@ -147,13 +130,47 @@
 
 				<article class="newsCard">
 					<div>
-						<img src="../img/cactusnews6.jpg" alt="imagen 6" class="imgNews">
+						<a href="https://hypebeast.com/2020/11/travis-scott-mcdonalds-action-figure-reselling-55k-usd-cactus-jack-meal-info" target="_blank">
+							<img src="../img/cactusnews3.jpg" alt="Foto de la figura de accion de Travis Scott en colaboracion con McDonald’s" class="imgNews">
+						</a>
 					</div>
 					<div class="textCard">
-						<h4 class="dateText">APR 27, 2021</h4>
-						<h2 class="titleCardNews">AN OFFICIAL LOOK AT TRAVIS SCOTT'S "BRITISH KHAKI" AIR JORDAN 6 COLLABORATION</h2>
-						<h3 class="textNews">After an early look surfaced earlier this month, an official look at the Travis Scott x Air Jordan 6 “British Khaki” has now been released.</h3>
-						<a href="https://hypebeast.com/2021/4/travis-scott-air-jordan-6-british-khaki-release-details" target="_blank">
+						<h4 class="dateText">NOV 9, 2020</h4>
+						<h2 class="titleCardNews">TRAVIS SCOTT'S MCDONALD'S ACTION FIGURE IS NOW RESELLING FOR $55K USD</h2>
+						<h3 class="textNews">The super-limited Travis Scott action figures from the commercial for the McDonald’s Cactus Jack Meal collaboration are now reselling for $55,000 USD.</h3>
+						<a href="https://hypebeast.com/2020/11/travis-scott-mcdonalds-action-figure-reselling-55k-usd-cactus-jack-meal-info" target="_blank">
+						<button class="button">read more</button>
+						</a>
+					</div>
+				</article>
+
+				<article class="newsCard">
+					<div>
+						<a href="https://hypebeast.com/2020/4/travis-scott-fortnite-astronomical-12-3-million-view" target="_blank">
+							<img src="../img/cactusnews2.jpg" alt="Imagen de la colaboracion del juego Fortnite x Travis Scott" class="imgNews">
+						</a>
+					</div>
+					<div class="textCard">
+						<h4 class="dateText">APR 24, 2020</h4>
+						<h2 class="titleCardNews">TRAVIS SCOTT'S 'FORTNITE' ASTRONOMICAL TOUR DREW 12.3 MILLION CONCURRENT VIEWERS</h2>
+						<h3 class="textNews">Travis Scott‘s opening Astronomical Tour in Fortnite broke records and drew in the biggest live audience in the game’s history. Over 12.3 million concurrent players participated.</h3>
+						<a href="https://hypebeast.com/2020/4/travis-scott-fortnite-astronomical-12-3-million-view" target="_blank">
+						<button class="button">read more</button>
+						</a>
+					</div>
+				</article>
+
+				<article class="newsCard">
+					<div>
+						<a href="https://hypebeast.com/2019/11/travis-scott-nike-air-force-1-cactus-jack-cn2405-900-closer-look" target="_blank">
+							<img src="../img/cactusnews5.jpg" alt="Foto de las zapatillas Nike Air Force 1 x Travis Scott" class="imgNews">
+						</a>
+					</div>
+					<div class="textCard">
+						<h4 class="dateText">NOV 15, 2019</h4>
+						<h2 class="titleCardNews">A CLOSER LOOK AT THE TRAVIS SCOTT X NIKE AIR FORCE 1 "CACTUS JACK"</h2>
+						<h3 class="textNews">Travis Scott and Nike‘s new Air Force 1 “Cactus Jack” is set to debut this weekend and ahead of its highly-anticipated arrival, HYPEBEAST brings you a close-up look at its patchwork styling. </h3>
+						<a href="https://hypebeast.com/2019/11/travis-scott-nike-air-force-1-cactus-jack-cn2405-900-closer-look" target="_blank">
 						<button class="button">read more</button>
 						</a>
 					</div>
@@ -166,7 +183,7 @@
 		<div class="sizeFooter">
 			<div class="cactusFooter">
 				<a href="../index.html">
-					<img src="../img/CactusJackFooter.png" alt="logo-footer" class="cactuslogo">
+					<img src="../img/CactusJackFooter.png" alt="Logo Cactus Jack footer" class="cactuslogo">
 				</a>
 			</div>
 
@@ -176,19 +193,19 @@
 			</form>
 			<div class="socialNetworks">
 				<a href="https://www.facebook.com/travisscottlaflame" target="_blank">
-					<img src="../img/facebook-icon.png" alt="facebook" class="social">
+					<img src="../img/facebook-icon.png" alt="Logo de Facebook" class="social">
 				</a>
 
 				<a href="https://twitter.com/trvisXX" target="_blank">
-					<img src="../img/twitter-icon.png" alt="twitter" class="social">
+					<img src="../img/twitter-icon.png" alt="Logo de Twitter" class="social">
 				</a>
 
 				<a href="https://www.youtube.com/channel/UCtxdfwb9wfkoGocVUAJ-Bmg" target="_blank" >
-					<img src="../img/youtube-icon.png" alt="youtube" class="social">
+					<img src="../img/youtube-icon.png" alt="Logo de Youtube" class="social">
 				</a>
 
 				<a href="https://www.instagram.com/cactusjack/?hl=es" target="_blank">
-					<img src="../img/instagram-icon.png" alt="instagram" class="social">
+					<img src="../img/instagram-icon.png" alt="Logo de Instagram" class="social">
 				</a>
 			</div>
 			<p class="footertext">© Cactus Jack, 2022. All rights reserved.</p>
