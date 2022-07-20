@@ -1,7 +1,7 @@
 {
   "name": "Cactus-Jack-Web",
   "version": "1.0.0",
-  "description": "",
+  "description": "Cactus Jack is the official website of Travis Scott. Tour of Travis Scott • Shop Cactus Jack products • Travis Scott Albums • All the latest news",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
