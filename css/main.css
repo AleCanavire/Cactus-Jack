@@ -534,6 +534,45 @@ header {
 .contactFooter {
   position: relative; }
 
+#error404 {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  #error404 .errorCard {
+    width: 50%;
+    padding: 30px;
+    background-color: #363433;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
+    #error404 .errorCard .errorLogo {
+      width: 20%; }
+      #error404 .errorCard .errorLogo img {
+        width: 100%; }
+    #error404 .errorCard .errorText {
+      width: 80%;
+      padding-left: 30px; }
+      #error404 .errorCard .errorText h1 {
+        color: #e2dad8;
+        font-size: 2.5rem;
+        font-weight: 600;
+        letter-spacing: 0.6rem; }
+      #error404 .errorCard .errorText h2 {
+        margin-bottom: 10px;
+        color: #e2dad8;
+        font-size: 1.8rem;
+        font-weight: 500; }
+      #error404 .errorCard .errorText .btn-brown {
+        background: #e2dad8;
+        color: #363433;
+        font-size: 1.3rem; }
+        #error404 .errorCard .errorText .btn-brown:hover {
+          background: #D8CCC9; }
+
 footer {
   background: #363433;
   width: 100%;
@@ -727,8 +766,10 @@ footer {
     width: 100%; }
   footer .sizeFooter .socialNetworks {
     justify-content: space-evenly; }
-    footer .sizeFooter .socialNetworks a {
-      margin: 0; } }
+    footer .sizeFooter .socialNetworks div {
+      margin: 0; }
+      footer .sizeFooter .socialNetworks div a {
+        margin: 0; } }
 
 @media (max-width: 1200px) {
   #imgHome {
@@ -984,3 +1025,23 @@ footer {
 @media (max-width: 480px) {
   .bgMain #mainContact .containerContact form {
     width: 90%; } }
+
+@media (max-width: 1200px) {
+  #error404 .errorCard {
+    width: 70%; } }
+
+@media (max-width: 768px) {
+  #error404 .errorCard {
+    width: 80%; } }
+
+@media (max-width: 600px) {
+  #error404 .errorCard {
+    width: 90%;
+    flex-direction: column; }
+    #error404 .errorCard .errorLogo {
+      width: 100px; }
+    #error404 .errorCard .errorText {
+      width: 100%;
+      padding-left: 0px;
+      padding-top: 20px;
+      text-align: center; } }

@@ -145,9 +145,12 @@
 			}
 			.socialNetworks{
 				justify-content: space-evenly;
-				a{
+				div{
 					margin: 0;
-				}
+					a{
+						margin: 0;
+					}
+				}	
 			}			
 		}
 	}	
@@ -609,6 +612,41 @@
 				form{
 					width: 90%;
 				}
+			}
+		}
+	}
+}
+
+//media queries error
+@media (max-width: 1200px){
+	#error404{
+		.errorCard{
+			width: 70%;
+		}
+	}
+}
+
+@media (max-width: 768px){
+	#error404{
+		.errorCard{
+			width: 80%;
+		}
+	}
+}
+
+@media (max-width: 600px){
+	#error404{
+		.errorCard{
+			width: 90%;
+			flex-direction: column;
+			.errorLogo{
+				width: 100px;
+			}
+			.errorText{
+				width: 100%;
+				padding-left: 0px;
+				padding-top: 20px;
+				text-align: center;
 			}
 		}
 	}
