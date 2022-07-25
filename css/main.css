@@ -685,7 +685,10 @@ footer {
       background-image: url(../img/burger-toggle.png); }
   .container-fluid .navbar-collapse .list {
     margin-top: 10px;
-    flex-direction: column; }
+    margin-right: 10px;
+    float: right;
+    flex-direction: column;
+    align-items: flex-end; }
     .container-fluid .navbar-collapse .list li {
       transform: none; }
       .container-fluid .navbar-collapse .list li:hover {
@@ -919,6 +922,10 @@ footer {
     font-size: 2.2rem;
     margin-top: 20px;
     margin-bottom: 20px; } }
+
+@media (min-width: 1200px) {
+  header .carousel picture {
+    height: 100vh; } }
 
 @media (max-width: 1200px) {
   .containerNews .newsCard {

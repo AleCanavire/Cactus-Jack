@@ -20,10 +20,13 @@
 			    background-image: url(../img/burger-toggle.png);
 			}	    
 		}
-		.navbar-collapse{
+		.navbar-collapse{	
 			.list{
 				margin-top: 10px;
+				margin-right: 10px;
+				float: right;
 				flex-direction: column;
+				align-items: flex-end;
 				li{
 					transform: none;
 					&:hover{
@@ -440,6 +443,16 @@
 }
 
 //media queries news
+@media (min-width: 1200px){
+	header{
+		.carousel{
+			picture{
+				height: 100vh;
+			}
+		}
+	}
+}
+
 @media (max-width: 1200px){
 	.containerNews{
 		.newsCard{
